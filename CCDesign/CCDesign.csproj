@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4383AEA5-8747-457B-8596-77EDC714D6EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CCTools.CCDesign</RootNamespace>
+    <AssemblyName>CCDesign</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Yongyi Chen.snk</AssemblyOriginatorKeyFile>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CCTest.cs" />
+    <Compile Include="Command Model\AddCloneConnectionCommand.cs" />
+    <Compile Include="Command Model\AddMonsterCommand.cs" />
+    <Compile Include="Command Model\AddMonsterRangeCommand.cs" />
+    <Compile Include="Command Model\AddTrapConnectionCommand.cs" />
+    <Compile Include="Command Model\ChangeTileCommand.cs" />
+    <Compile Include="Command Model\ClearMonsterLocationsCommand.cs" />
+    <Compile Include="Command Model\Command.cs" />
+    <Compile Include="Command Model\CompoundCommand.cs" />
+    <Compile Include="Command Model\MoveCloneConnectionCommand.cs" />
+    <Compile Include="Command Model\MoveMonsterLocationCommand.cs" />
+    <Compile Include="Command Model\MoveTrapConnectionCommand.cs" />
+    <Compile Include="Command Model\RemoveCloneConnectionCommand.cs" />
+    <Compile Include="Command Model\RemoveMonsterCommand.cs" />
+    <Compile Include="Command Model\RemoveTrapConnectionCommand.cs" />
+    <Compile Include="Command Model\UndoRedoHistory.cs" />
+    <Compile Include="Dialogs\AddConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddConnectionDialog.designer.cs">
+      <DependentUpon>AddConnectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\AddMonsterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddMonsterDialog.designer.cs">
+      <DependentUpon>AddMonsterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ChipsLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ChipsLocationForm.Designer.cs">
+      <DependentUpon>ChipsLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CloneConnectionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CloneConnectionsDialog.designer.cs">
+      <DependentUpon>CloneConnectionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MonstersDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MonstersDialog.designer.cs">
+      <DependentUpon>MonstersDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\TrapConnectionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\TrapConnectionsDialog.designer.cs">
+      <DependentUpon>TrapConnectionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor Tools\CloneConnectorEditorTool.cs" />
+    <Compile Include="Editor Tools\DefaultEditorTool.cs" />
+    <Compile Include="Editor Tools\EditorTool.cs" />
+    <Compile Include="Editor Tools\PathMakerEditorTool.cs" />
+    <Compile Include="Editor Tools\SelectEditorTool.cs" />
+    <Compile Include="Editor Tools\TrapConnectorEditorTool.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighlightMarker.cs" />
+    <Compile Include="LevelEditorTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LevelMapEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryHelper.cs" />
+    <Compile Include="Task Dialog\TaskDialog.cs" />
+    <Compile Include="Task Dialog\TaskDialogButton.cs" />
+    <Compile Include="Task Dialog\TaskDialogIcon.cs" />
+    <Compile Include="Task Dialog\TaskDialogStandardButtons.cs" />
+    <Compile Include="TileConnectionMarker.cs" />
+    <Compile Include="TileLocationMarker.cs" />
+    <Compile Include="TileSelection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Yongyi Chen.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CloneConnectionsDialog.resx">
+      <DependentUpon>CloneConnectionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MonstersDialog.resx">
+      <DependentUpon>MonstersDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TrapConnectionsDialog.resx">
+      <DependentUpon>TrapConnectionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application.ico" />
+    <Content Include="Form1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CCTools\CCTools.csproj">
+      <Project>{8BFC424E-4FEC-4064-991C-9D2A2A1C59E4}</Project>
+      <Name>CCTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

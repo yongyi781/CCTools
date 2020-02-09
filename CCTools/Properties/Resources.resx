@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Argument_InvalidBound" xml:space="preserve">
+    <value>{0} must be between {1} and {2}.</value>
+  </data>
+  <data name="Argument_MustBeLess" xml:space="preserve">
+    <value>{0} must be less than {1}.</value>
+  </data>
+  <data name="Description_PinkBallE" xml:space="preserve">
+    <value>Pink Ball - E</value>
+  </data>
+  <data name="Description_PinkBallN" xml:space="preserve">
+    <value>Pink Ball - N</value>
+  </data>
+  <data name="Description_PinkBallS" xml:space="preserve">
+    <value>Pink Ball - S</value>
+  </data>
+  <data name="Description_PinkBallW" xml:space="preserve">
+    <value>Pink Ball - W</value>
+  </data>
+  <data name="Description_BlobE" xml:space="preserve">
+    <value>Blob - E</value>
+  </data>
+  <data name="Description_BlobN" xml:space="preserve">
+    <value>Blob - N</value>
+  </data>
+  <data name="Description_BlobS" xml:space="preserve">
+    <value>Blob - S</value>
+  </data>
+  <data name="Description_BlobW" xml:space="preserve">
+    <value>Blob - W</value>
+  </data>
+  <data name="Description_Block" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="Description_BlockE" xml:space="preserve">
+    <value>Block - E</value>
+  </data>
+  <data name="Description_BlockN" xml:space="preserve">
+    <value>Block - N</value>
+  </data>
+  <data name="Description_BlockS" xml:space="preserve">
+    <value>Block - S</value>
+  </data>
+  <data name="Description_BlockW" xml:space="preserve">
+    <value>Block - W</value>
+  </data>
+  <data name="Description_BlueWallFake" xml:space="preserve">
+    <value>Blue Wall -&gt; Floor</value>
+  </data>
+  <data name="Description_BlueWallReal" xml:space="preserve">
+    <value>Blue Wall -&gt; Wall</value>
+  </data>
+  <data name="Description_Bomb" xml:space="preserve">
+    <value>Bomb</value>
+  </data>
+  <data name="Description_BugE" xml:space="preserve">
+    <value>Bug - E</value>
+  </data>
+  <data name="Description_BugN" xml:space="preserve">
+    <value>Bug - N</value>
+  </data>
+  <data name="Description_BugS" xml:space="preserve">
+    <value>Bug - S</value>
+  </data>
+  <data name="Description_BugW" xml:space="preserve">
+    <value>Bug - W</value>
+  </data>
+  <data name="Description_BlueButton" xml:space="preserve">
+    <value>Blue Button</value>
+  </data>
+  <data name="Description_BrownButton" xml:space="preserve">
+    <value>Brown Button</value>
+  </data>
+  <data name="Description_GreenButton" xml:space="preserve">
+    <value>Green Button</value>
+  </data>
+  <data name="Description_RedButton" xml:space="preserve">
+    <value>Red Button</value>
+  </data>
+  <data name="Description_Chip" xml:space="preserve">
+    <value>Chip</value>
+  </data>
+  <data name="Description_BurningChip" xml:space="preserve">
+    <value>Chip in Fire</value>
+  </data>
+  <data name="Description_BurntChip" xml:space="preserve">
+    <value>Burnt Chip</value>
+  </data>
+  <data name="Description_ChipE" xml:space="preserve">
+    <value>Chip - E</value>
+  </data>
+  <data name="Description_ChipInExit" xml:space="preserve">
+    <value>Chip in Exit</value>
+  </data>
+  <data name="Description_ChipN" xml:space="preserve">
+    <value>Chip - N</value>
+  </data>
+  <data name="Description_ChipS" xml:space="preserve">
+    <value>Chip - S</value>
+  </data>
+  <data name="Description_ChipSwimN" xml:space="preserve">
+    <value>Chip Swim - N</value>
+  </data>
+  <data name="Description_ChipSwimE" xml:space="preserve">
+    <value>Chip Swim - E</value>
+  </data>
+  <data name="Description_ChipSwimS" xml:space="preserve">
+    <value>Chip Swim - S</value>
+  </data>
+  <data name="Description_ChipSwimW" xml:space="preserve">
+    <value>Chip Swim - W</value>
+  </data>
+  <data name="Description_ChipW" xml:space="preserve">
+    <value>Chip - W</value>
+  </data>
+  <data name="Description_CloningMachine" xml:space="preserve">
+    <value>Cloning Machine</value>
+  </data>
+  <data name="Description_Dirt" xml:space="preserve">
+    <value>Dirt</value>
+  </data>
+  <data name="Description_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Description_FakeExit1" xml:space="preserve">
+    <value>Fake Exit 1</value>
+  </data>
+  <data name="Description_FakeExit2" xml:space="preserve">
+    <value>Fake Exit 2</value>
+  </data>
+  <data name="Description_Fire" xml:space="preserve">
+    <value>Fire</value>
+  </data>
+  <data name="Description_FireballE" xml:space="preserve">
+    <value>Fireball - E</value>
+  </data>
+  <data name="Description_FireballN" xml:space="preserve">
+    <value>Fireball - N</value>
+  </data>
+  <data name="Description_FireballS" xml:space="preserve">
+    <value>Fireball - S</value>
+  </data>
+  <data name="Description_FireballW" xml:space="preserve">
+    <value>Fireball - W</value>
+  </data>
+  <data name="Description_FireBoots" xml:space="preserve">
+    <value>Fire Boots</value>
+  </data>
+  <data name="Description_Flippers" xml:space="preserve">
+    <value>Flippers</value>
+  </data>
+  <data name="Description_Floor" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+  <data name="Description_ForceFloorE" xml:space="preserve">
+    <value>Force Floor - E</value>
+  </data>
+  <data name="Description_ForceFloorN" xml:space="preserve">
+    <value>Force Floor - N</value>
+  </data>
+  <data name="Description_ForceFloorRandom" xml:space="preserve">
+    <value>Force Floor - Random</value>
+  </data>
+  <data name="Description_ForceFloorS" xml:space="preserve">
+    <value>Force Floor - S</value>
+  </data>
+  <data name="Description_ForceFloorW" xml:space="preserve">
+    <value>Force Floor - W</value>
+  </data>
+  <data name="Description_GliderE" xml:space="preserve">
+    <value>Glider - E</value>
+  </data>
+  <data name="Description_GliderN" xml:space="preserve">
+    <value>Glider - N</value>
+  </data>
+  <data name="Description_GliderS" xml:space="preserve">
+    <value>Glider - S</value>
+  </data>
+  <data name="Description_GliderW" xml:space="preserve">
+    <value>Glider - W</value>
+  </data>
+  <data name="Description_Gravel" xml:space="preserve">
+    <value>Gravel</value>
+  </data>
+  <data name="Description_HiddenWall" xml:space="preserve">
+    <value>Hidden Wall</value>
+  </data>
+  <data name="Description_Hint" xml:space="preserve">
+    <value>Hint</value>
+  </data>
+  <data name="Description_Ice" xml:space="preserve">
+    <value>Ice</value>
+  </data>
+  <data name="Description_IceNE" xml:space="preserve">
+    <value>Ice - NE</value>
+  </data>
+  <data name="Description_IceNW" xml:space="preserve">
+    <value>Ice - NW</value>
+  </data>
+  <data name="Description_IceSE" xml:space="preserve">
+    <value>Ice - SE</value>
+  </data>
+  <data name="Description_IceSkates" xml:space="preserve">
+    <value>Ice Skates</value>
+  </data>
+  <data name="Description_IceSW" xml:space="preserve">
+    <value>Ice - SW</value>
+  </data>
+  <data name="Description_InvisibleWall" xml:space="preserve">
+    <value>Invisible Wall</value>
+  </data>
+  <data name="Description_BlueKey" xml:space="preserve">
+    <value>Blue Key</value>
+  </data>
+  <data name="Description_GreenKey" xml:space="preserve">
+    <value>Green Key</value>
+  </data>
+  <data name="Description_RedKey" xml:space="preserve">
+    <value>Red Key</value>
+  </data>
+  <data name="Description_YellowKey" xml:space="preserve">
+    <value>Yellow Key</value>
+  </data>
+  <data name="Description_BlueLock" xml:space="preserve">
+    <value>Blue Lock</value>
+  </data>
+  <data name="Description_GreenLock" xml:space="preserve">
+    <value>Green Lock</value>
+  </data>
+  <data name="Description_RedLock" xml:space="preserve">
+    <value>Red Lock</value>
+  </data>
+  <data name="Description_YellowLock" xml:space="preserve">
+    <value>Yellow Lock</value>
+  </data>
+  <data name="Description_PanelE" xml:space="preserve">
+    <value>Panel - E</value>
+  </data>
+  <data name="Description_PanelN" xml:space="preserve">
+    <value>Panel - N</value>
+  </data>
+  <data name="Description_PanelS" xml:space="preserve">
+    <value>Panel - S</value>
+  </data>
+  <data name="Description_PanelSE" xml:space="preserve">
+    <value>Panel - SE</value>
+  </data>
+  <data name="Description_PanelW" xml:space="preserve">
+    <value>Panel - W</value>
+  </data>
+  <data name="Description_ParameciumE" xml:space="preserve">
+    <value>Paramecium - E</value>
+  </data>
+  <data name="Description_ParameciumN" xml:space="preserve">
+    <value>Paramecium - N</value>
+  </data>
+  <data name="Description_ParameciumS" xml:space="preserve">
+    <value>Paramecium - S</value>
+  </data>
+  <data name="Description_ParameciumW" xml:space="preserve">
+    <value>Paramecium - W</value>
+  </data>
+  <data name="Description_RecessedWall" xml:space="preserve">
+    <value>Recessed Wall</value>
+  </data>
+  <data name="Description_Socket" xml:space="preserve">
+    <value>Socket</value>
+  </data>
+  <data name="Description_Splash" xml:space="preserve">
+    <value>Splash</value>
+  </data>
+  <data name="Description_Thief" xml:space="preserve">
+    <value>Thief</value>
+  </data>
+  <data name="Description_SuctionBoots" xml:space="preserve">
+    <value>Suction Boots</value>
+  </data>
+  <data name="Description_TankE" xml:space="preserve">
+    <value>Tank - E</value>
+  </data>
+  <data name="Description_TankN" xml:space="preserve">
+    <value>Tank - N</value>
+  </data>
+  <data name="Description_TankS" xml:space="preserve">
+    <value>Tank - S</value>
+  </data>
+  <data name="Description_TankW" xml:space="preserve">
+    <value>Tank - W</value>
+  </data>
+  <data name="Description_TeethE" xml:space="preserve">
+    <value>Teeth - E</value>
+  </data>
+  <data name="Description_TeethN" xml:space="preserve">
+    <value>Teeth - N</value>
+  </data>
+  <data name="Description_TeethS" xml:space="preserve">
+    <value>Teeth - S</value>
+  </data>
+  <data name="Description_TeethW" xml:space="preserve">
+    <value>Teeth - W</value>
+  </data>
+  <data name="Description_Teleport" xml:space="preserve">
+    <value>Teleport</value>
+  </data>
+  <data name="Description_ToggleDoorClosed" xml:space="preserve">
+    <value>Toggle Door - Closed</value>
+  </data>
+  <data name="Description_ToggleDoorOpen" xml:space="preserve">
+    <value>Toggle Door - Open</value>
+  </data>
+  <data name="Description_Trap" xml:space="preserve">
+    <value>Trap</value>
+  </data>
+  <data name="Description_Unused20" xml:space="preserve">
+    <value>Overlay Buffer</value>
+  </data>
+  <data name="Description_Unused36" xml:space="preserve">
+    <value>Unused 36</value>
+  </data>
+  <data name="Description_Unused37" xml:space="preserve">
+    <value>Unused 37</value>
+  </data>
+  <data name="Description_Unused38" xml:space="preserve">
+    <value>Ice Block</value>
+  </data>
+  <data name="Description_WalkerE" xml:space="preserve">
+    <value>Walker - E</value>
+  </data>
+  <data name="Description_WalkerN" xml:space="preserve">
+    <value>Walker - N</value>
+  </data>
+  <data name="Description_WalkerS" xml:space="preserve">
+    <value>Walker - S</value>
+  </data>
+  <data name="Description_WalkerW" xml:space="preserve">
+    <value>Walker - W</value>
+  </data>
+  <data name="Description_Wall" xml:space="preserve">
+    <value>Wall</value>
+  </data>
+  <data name="Description_Water" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="Argument_OnlyOneItem" xml:space="preserve">
+    <value>Cannot add or insert the item '{0}' in more than one place. You must first remove it from its current location or clone it.</value>
+  </data>
+  <data name="Argument_MustBeLessOrEqual" xml:space="preserve">
+    <value>{0} must be less than or equal to {1}.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DefaultTileset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\tilesets\default.tileset;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PreviewTileset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\tilesets\preview.tileset;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
