@@ -1,40 +1,31 @@
 ﻿namespace CCTools.CCDesign
 {
-	public class MoveMonsterLocationCommand : Command
-	{
-		public MoveMonsterLocationCommand(int oldIndex, int newIndex)
-		{
-			this.oldIndex = oldIndex;
-			this.newIndex = newIndex;
-		}
+    public class MoveMonsterLocationCommand : Command
+    {
+        public MoveMonsterLocationCommand(int oldIndex, int newIndex)
+        {
+            OldIndex = oldIndex;
+            NewIndex = newIndex;
+        }
 
-		private int oldIndex = -1;
-		public int OldIndex
-		{
-			get { return oldIndex; }
-		}
+        public int OldIndex { get; } = -1;
+        public int NewIndex { get; } = -1;
 
-		private int newIndex = -1;
-		public int NewIndex
-		{
-			get { return newIndex; }
-		}
+        public override string Name
+        {
+            get { return "Add Trap Connection"; }
+        }
 
-		public override string Name
-		{
-			get { return "Add Trap Connection"; }
-		}
+        public override void Do()
+        {
+            if (OldIndex > -1 && OldIndex < Owner.Level.MonsterLocations.Count && NewIndex > -1 && NewIndex < Owner.Level.MonsterLocations.Count)
+                Owner.Level.MonsterLocations.Move(OldIndex, NewIndex);
+        }
 
-		public override void Do()
-		{
-			if (oldIndex > -1 && oldIndex < Owner.Level.MonsterLocations.Count && newIndex > -1 && newIndex < Owner.Level.MonsterLocations.Count)
-				Owner.Level.MonsterLocations.Move(oldIndex, newIndex);
-		}
-
-		public override void Undo()
-		{
-			if (oldIndex > -1 && oldIndex < Owner.Level.MonsterLocations.Count && newIndex > -1 && newIndex < Owner.Level.MonsterLocations.Count)
-				Owner.Level.MonsterLocations.Move(newIndex, oldIndex);
-		}
-	}
+        public override void Undo()
+        {
+            if (OldIndex > -1 && OldIndex < Owner.Level.MonsterLocations.Count && NewIndex > -1 && NewIndex < Owner.Level.MonsterLocations.Count)
+                Owner.Level.MonsterLocations.Move(NewIndex, OldIndex);
+        }
+    }
 }

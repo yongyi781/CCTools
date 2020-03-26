@@ -1,50 +1,41 @@
 ﻿namespace CCTools.CCDesign
 {
-	public class MoveTrapConnectionCommand : Command
-	{
-		public MoveTrapConnectionCommand(int oldIndex, int newIndex)
-		{
-			this.oldIndex = oldIndex;
-			this.newIndex = newIndex;
-		}
+    public class MoveTrapConnectionCommand : Command
+    {
+        public MoveTrapConnectionCommand(int oldIndex, int newIndex)
+        {
+            OldIndex = oldIndex;
+            NewIndex = newIndex;
+        }
 
-		private int oldIndex = -1;
-		public int OldIndex
-		{
-			get { return oldIndex; }
-		}
+        public int OldIndex { get; } = -1;
+        public int NewIndex { get; } = -1;
 
-		private int newIndex = -1;
-		public int NewIndex
-		{
-			get { return newIndex; }
-		}
+        public override string Name
+        {
+            get { return "Add Trap Connection"; }
+        }
 
-		public override string Name
-		{
-			get { return "Add Trap Connection"; }
-		}
+        public override void Do()
+        {
+            if (OldIndex > -1 && OldIndex < Owner.Level.TrapConnections.Count && NewIndex > -1 && NewIndex < Owner.Level.TrapConnections.Count)
+            {
+                Owner.Level.TrapConnections.Move(OldIndex, NewIndex);
+                foreach (var trapConnection in Owner.Level.TrapConnections)
+                    Owner.Invalidate(trapConnection);
+            }
+            Owner.UpdateTileCoordinatesAndHighlights();
+        }
 
-		public override void Do()
-		{
-			if (oldIndex > -1 && oldIndex < Owner.Level.TrapConnections.Count && newIndex > -1 && newIndex < Owner.Level.TrapConnections.Count)
-			{
-				Owner.Level.TrapConnections.Move(oldIndex, newIndex);
-				foreach (var trapConnection in Owner.Level.TrapConnections)
-					Owner.Invalidate(trapConnection);
-			}
-			Owner.UpdateTileCoordinatesAndHighlights();
-		}
-
-		public override void Undo()
-		{
-			if (oldIndex > -1 && oldIndex < Owner.Level.TrapConnections.Count && newIndex > -1 && newIndex < Owner.Level.TrapConnections.Count)
-			{
-				Owner.Level.TrapConnections.Move(newIndex, oldIndex);
-				foreach (var trapConnection in Owner.Level.TrapConnections)
-					Owner.Invalidate(trapConnection);
-			}
-			Owner.UpdateTileCoordinatesAndHighlights();
-		}
-	}
+        public override void Undo()
+        {
+            if (OldIndex > -1 && OldIndex < Owner.Level.TrapConnections.Count && NewIndex > -1 && NewIndex < Owner.Level.TrapConnections.Count)
+            {
+                Owner.Level.TrapConnections.Move(NewIndex, OldIndex);
+                foreach (var trapConnection in Owner.Level.TrapConnections)
+                    Owner.Invalidate(trapConnection);
+            }
+            Owner.UpdateTileCoordinatesAndHighlights();
+        }
+    }
 }

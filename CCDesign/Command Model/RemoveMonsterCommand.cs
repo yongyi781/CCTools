@@ -11,7 +11,7 @@ namespace CCTools.CCDesign
 
 		public RemoveMonsterCommand(int index)
 		{
-			this.index = index;
+			this.Index = index;
 		}
 
 		public override string Name
@@ -25,18 +25,14 @@ namespace CCTools.CCDesign
 			get { return location; }
 		}
 
-		private int index = -1;
-		public int Index
-		{
-			get { return index; }
-		}
+		public int Index { get; } = -1;
 
 		public override void Do()
 		{
-			if (index > -1 && index < Owner.Level.MonsterLocations.Count)
+			if (Index > -1 && Index < Owner.Level.MonsterLocations.Count)
 			{
-				location = Owner.Level.MonsterLocations[index];
-				Owner.Level.MonsterLocations.RemoveAt(index);
+				location = Owner.Level.MonsterLocations[Index];
+				Owner.Level.MonsterLocations.RemoveAt(Index);
 			}
 			else
 				Owner.Level.MonsterLocations.Remove(location);

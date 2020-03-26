@@ -8,9 +8,9 @@ namespace CCTools
 	[Serializable]
 	public sealed class TileLocationCollection : IList<TileLocation>, IBindingList, ICloneable
 	{
-		private IList<TileLocation> _items = new List<TileLocation>();
+		private readonly IList<TileLocation> _items = new List<TileLocation>();
+		private readonly int _maxItems;
 		private bool _updating;
-		private int _maxItems;
 
 		public TileLocationCollection() { _maxItems = -1; }
 		public TileLocationCollection(int maxItems) { _maxItems = maxItems; }
@@ -22,8 +22,7 @@ namespace CCTools
 		public event ListChangedEventHandler ListChanged;
 		internal void OnListChanged(ListChangedEventArgs e)
 		{
-			if (ListChanged != null)
-				ListChanged(this, e);
+			ListChanged?.Invoke(this, e);
 		}
 
 		#endregion

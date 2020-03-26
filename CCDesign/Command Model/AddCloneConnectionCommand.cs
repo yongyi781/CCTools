@@ -11,7 +11,7 @@ namespace CCTools.CCDesign
 
 		public AddCloneConnectionCommand(int index, TileConnection connection)
 		{
-			this.index = index;
+			this.Index = index;
 			this.connection = connection;
 		}
 
@@ -19,11 +19,7 @@ namespace CCTools.CCDesign
 
 		public AddCloneConnectionCommand(int index, TileLocation source, TileLocation destination) : this(index, new TileConnection(source, destination)) { }
 
-		private int index = -1;
-		public int Index
-		{
-			get { return index; }
-		}
+		public int Index { get; } = -1;
 
 		private TileConnection connection;
 		public TileConnection Connection
@@ -38,8 +34,8 @@ namespace CCTools.CCDesign
 
 		public override void Do()
 		{
-			if (index > -1 && index < Owner.Level.CloneConnections.Count)
-				Owner.Level.CloneConnections.Insert(index, connection);
+			if (Index > -1 && Index < Owner.Level.CloneConnections.Count)
+				Owner.Level.CloneConnections.Insert(Index, connection);
 			else
 				Owner.Level.CloneConnections.Add(connection);
 			foreach (var cloneConnection in Owner.Level.CloneConnections)

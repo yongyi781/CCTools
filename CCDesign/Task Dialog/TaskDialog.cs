@@ -5,97 +5,92 @@ using System.Windows.Forms;
 
 namespace CCTools.CCDesign
 {
-	sealed class TaskDialog
-	{
-		#region Fields
+    sealed class TaskDialog
+    {
+        #region Fields
 
-		private NativeMethods.TASKDIALOGCONFIG _taskConfig = new NativeMethods.TASKDIALOGCONFIG();
+        private readonly NativeMethods.TASKDIALOGCONFIG _taskConfig = new NativeMethods.TASKDIALOGCONFIG();
 
-		#endregion
+        #endregion
 
-		#region Constructor
+        #region Constructor
 
-		public TaskDialog()
-		{
-			_taskConfig.cbSize = Marshal.SizeOf(typeof(NativeMethods.TASKDIALOGCONFIG));
-		}
+        public TaskDialog()
+        {
+            _taskConfig.cbSize = Marshal.SizeOf(typeof(NativeMethods.TASKDIALOGCONFIG));
+        }
 
-		#endregion
+        #endregion
 
-		#region Properties
+        #region Properties
 
-		private Collection<TaskDialogButton> buttons = new Collection<TaskDialogButton>();
-		public Collection<TaskDialogButton> Buttons
-		{
-			get { return buttons; }
-		}
+        public Collection<TaskDialogButton> Buttons { get; } = new Collection<TaskDialogButton>();
 
-		public TaskDialogStandardButtons CommonButtons
-		{
-			set { _taskConfig.dwCommonButtons = value; }
-		}
+        public TaskDialogStandardButtons CommonButtons
+        {
+            set { _taskConfig.dwCommonButtons = value; }
+        }
 
-		public string Content
-		{
-			set { _taskConfig.pszContent = value; }
-		}
+        public string Content
+        {
+            set { _taskConfig.pszContent = value; }
+        }
 
-		public string ExpandedInformation
-		{
-			set { _taskConfig.pszExpandedInformation = value; }
-		}
+        public string ExpandedInformation
+        {
+            set { _taskConfig.pszExpandedInformation = value; }
+        }
 
-		public bool ExpandFooterArea
-		{
-			set { _taskConfig.dwFlags = value ? _taskConfig.dwFlags | NativeMethods.TASKDIALOG_FLAGS.TDF_EXPAND_FOOTER_AREA : _taskConfig.dwFlags & ~NativeMethods.TASKDIALOG_FLAGS.TDF_EXPAND_FOOTER_AREA; }
-		}
+        public bool ExpandFooterArea
+        {
+            set { _taskConfig.dwFlags = value ? _taskConfig.dwFlags | NativeMethods.TASKDIALOG_FLAGS.TDF_EXPAND_FOOTER_AREA : _taskConfig.dwFlags & ~NativeMethods.TASKDIALOG_FLAGS.TDF_EXPAND_FOOTER_AREA; }
+        }
 
-		public string MainInstruction
-		{
-			set { _taskConfig.pszMainInstruction = value; }
-		}
+        public string MainInstruction
+        {
+            set { _taskConfig.pszMainInstruction = value; }
+        }
 
-		public TaskDialogIcon MainIcon
-		{
-			set { _taskConfig.mainIcon = new IntPtr((int)value); }
-		}
+        public TaskDialogIcon MainIcon
+        {
+            set { _taskConfig.mainIcon = new IntPtr((int)value); }
+        }
 
-		public string WindowTitle
-		{
-			set { _taskConfig.pszWindowTitle = value; }
-		}
+        public string WindowTitle
+        {
+            set { _taskConfig.pszWindowTitle = value; }
+        }
 
-		#endregion
+        #endregion
 
-		#region Methods
+        #region Methods
 
-		public DialogResult ShowDialog()
-		{
-			_taskConfig.hwndParent = NativeMethods.GetActiveWindow();
+        public DialogResult ShowDialog()
+        {
+            _taskConfig.hwndParent = NativeMethods.GetActiveWindow();
 
-			var count = buttons.Count;
+            var count = Buttons.Count;
 
-			if (count > 0)
-			{
-				_taskConfig.cButtons = count;
-				unsafe
-				{
-					var pButtons = stackalloc NativeMethods.TASKDIALOG_BUTTON[count];
-					for (int i = 0; i < count; i++)
-					{
-						var button = buttons[i];
-						pButtons[i].nButtonID = button.Id;
-						fixed (char* pszButtonText = button.Text)
-							pButtons[i].pszButtonText = pszButtonText;
-					}
-					_taskConfig.pButtons = pButtons;
-				}
-			}
+            if (count > 0)
+            {
+                _taskConfig.cButtons = count;
+                unsafe
+                {
+                    var pButtons = stackalloc NativeMethods.TASKDIALOG_BUTTON[count];
+                    for (int i = 0; i < count; i++)
+                    {
+                        var button = Buttons[i];
+                        pButtons[i].nButtonID = button.Id;
+                        fixed (char* pszButtonText = button.Text)
+                            pButtons[i].pszButtonText = pszButtonText;
+                    }
+                    _taskConfig.pButtons = pButtons;
+                }
+            }
 
-			DialogResult nButton;
-			return NativeMethods.TaskDialogIndirect(_taskConfig, out nButton, IntPtr.Zero, IntPtr.Zero) == 0 ? nButton : DialogResult.None;
-		}
+            return NativeMethods.TaskDialogIndirect(_taskConfig, out DialogResult nButton, IntPtr.Zero, IntPtr.Zero) == 0 ? nButton : DialogResult.None;
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }

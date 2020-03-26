@@ -4,79 +4,68 @@ using System.Drawing;
 
 namespace CCTools
 {
-	[Serializable]
-	public struct TileLocation
-	{
-		public static readonly TileLocation Invalid = new TileLocation(-1, -1);
+    [Serializable]
+    public struct TileLocation
+    {
+        public static readonly TileLocation Invalid = new TileLocation(-1, -1);
 
-		public TileLocation(int x, int y)
-		{
-			this.x = x;
-			this.y = y;
-		}
+        public TileLocation(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
 
-		private int x;
-		public int X
-		{
-			get { return x; }
-			set { x = value; }
-		}
+        public int X { get; set; }
+        public int Y { get; set; }
 
-		private int y;
-		public int Y
-		{
-			get { return y; }
-			set { y = value; }
-		}
+        public static TileLocation operator +(TileLocation left, TileLocation right)
+        {
+            return new TileLocation(left.X + right.X, left.Y + right.Y);
+        }
 
-		public static TileLocation operator +(TileLocation left, TileLocation right)
-		{
-			return new TileLocation(left.x + right.x, left.y + right.y);
-		}
+        public static TileLocation operator -(TileLocation left, TileLocation right)
+        {
+            return new TileLocation(left.X - right.X, left.Y - right.Y);
+        }
 
-		public static TileLocation operator -(TileLocation left, TileLocation right)
-		{
-			return new TileLocation(left.x - right.x, left.y - right.y);
-		}
+        public static bool operator ==(TileLocation left, TileLocation right)
+        {
+            return Equals(left, right);
+        }
 
-		public static bool operator ==(TileLocation left, TileLocation right)
-		{
-			return Equals(left, right);
-		}
+        public static bool operator !=(TileLocation left, TileLocation right)
+        {
+            return !Equals(left, right);
+        }
 
-		public static bool operator !=(TileLocation left, TileLocation right)
-		{
-			return !Equals(left, right);
-		}
+        public static bool Equals(TileLocation left, TileLocation right)
+        {
+            return left.X == right.X && left.Y == right.Y;
+        }
 
-		public static bool Equals(TileLocation left, TileLocation right)
-		{
-			return left.x == right.x && left.y == right.y;
-		}
+        public override bool Equals(object obj)
+        {
+            return obj is TileLocation && Equals(this, (TileLocation)obj);
+        }
 
-		public override bool Equals(object obj)
-		{
-			return obj is TileLocation && Equals(this, (TileLocation)obj);
-		}
+        public override int GetHashCode()
+        {
+            return X ^ Y;
+        }
 
-		public override int GetHashCode()
-		{
-			return x ^ y;
-		}
+        public bool IsValid()
+        {
+            return X >= 0 && X < 32 && Y >= 0 && Y < 32;
+        }
 
-		public bool IsValid()
-		{
-			return x >= 0 && x < 32 && y >= 0 && y < 32;
-		}
+        public Rectangle ToRectangle(int tileSize)
+        {
+            return new Rectangle(X * tileSize, Y * tileSize, tileSize, tileSize);
+        }
 
-		public Rectangle ToRectangle(int tileSize)
-		{
-			return new Rectangle(x * tileSize, y * tileSize, tileSize, tileSize);
-		}
-
-		public override string ToString()
-		{
-			return string.Format(CultureInfo.CurrentCulture, "({0}, {1})", x, y);
-		}
-	}
+        public override string ToString()
+        {
+            return string.Format(CultureInfo.CurrentCulture, "({0}, {1})", X, Y);
+        }
+    }
 }

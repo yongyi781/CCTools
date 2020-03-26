@@ -8,9 +8,9 @@ namespace CCTools
 	[Serializable]
 	public sealed class TileConnectionCollection : IList<TileConnection>, IBindingList, ICloneable
 	{
-		private IList<TileConnection> _items = new List<TileConnection>();
+		private readonly IList<TileConnection> _items = new List<TileConnection>();
 		private bool _updating;
-		private int _maxItems;
+		private readonly int _maxItems;
 
 		public TileConnectionCollection() { }
 		public TileConnectionCollection(int maxItems) { _maxItems = maxItems; }
@@ -22,8 +22,7 @@ namespace CCTools
 		public event ListChangedEventHandler ListChanged;
 		internal void OnListChanged(ListChangedEventArgs e)
 		{
-			if (ListChanged != null)
-				ListChanged(this, e);
+			ListChanged?.Invoke(this, e);
 		}
 
 		#endregion

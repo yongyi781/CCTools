@@ -2,33 +2,24 @@ using System.Windows.Forms;
 
 namespace CCTools.CCDesign
 {
-	sealed class TaskDialogButton
-	{
-		#region Constructors
+    sealed class TaskDialogButton
+    {
+        #region Constructors
 
-		public TaskDialogButton() { }
-		public TaskDialogButton(DialogResult id, string text)
-		{
-			this.id = id;
-			this.text = text;
-		}
+        public TaskDialogButton() { }
+        public TaskDialogButton(DialogResult id, string text)
+        {
+            Id = id;
+            Text = text;
+        }
 
-		#endregion
+        #endregion
 
-		#region Properties
+        #region Properties
 
-		private DialogResult id;
-		public DialogResult Id
-		{
-			get { return id; }
-		}
+        public DialogResult Id { get; }
+        public string Text { get; }
 
-		private string text;
-		public string Text
-		{
-			get { return text; }
-		}
-
-		#endregion
-	}
+        #endregion
+    }
 }
