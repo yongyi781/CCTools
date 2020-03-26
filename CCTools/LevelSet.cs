@@ -10,7 +10,7 @@ namespace CCTools
 	[Serializable]
 	public sealed class LevelSet : IList<Level>, IBindingList, IRaiseItemChangedEvents
 	{
-		private IList<Level> _items = new List<Level>();
+		private readonly IList<Level> _items = new List<Level>();
 		private bool _updating;
 
 		#region Events
@@ -20,8 +20,7 @@ namespace CCTools
 		public event ListChangedEventHandler ListChanged;
 		private void OnListChanged(ListChangedEventArgs e)
 		{
-			if (ListChanged != null)
-				ListChanged(this, e);
+			ListChanged?.Invoke(this, e);
 		}
 
 		#endregion

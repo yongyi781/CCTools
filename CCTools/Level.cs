@@ -43,8 +43,7 @@ namespace CCTools
 		public event PropertyChangedEventHandler PropertyChanged;
 		internal void OnPropertyChanged(PropertyChangedEventArgs e)
 		{
-			if (PropertyChanged != null)
-				PropertyChanged(this, e);
+			PropertyChanged?.Invoke(this, e);
 			if (parent != null && e.PropertyName != "UpperLayer" && e.PropertyName != "LowerLayer")
 				parent.OnLevelChanged(this);
 		}
@@ -183,7 +182,7 @@ namespace CCTools
 
 		#region Methods
 
-		public void Draw(Graphics graphics, Tileset tileset, LayerMode layerMode, Rectangle rect, int tileSize)
+		public void Draw(Graphics graphics, Tileset tileset, LayerMode layerMode, int tileSize)
 		{
 			foreach (var location in TileRectangle.AllTiles.ToArray())
 				tileset.DrawTile(graphics, location, upperLayer[location], lowerLayer[location], layerMode, tileSize);

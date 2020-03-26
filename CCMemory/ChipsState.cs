@@ -10,7 +10,6 @@ namespace CCMemory
         public byte[] Upper { get; set; }           // (0,0)
         [field: MarshalAs(UnmanagedType.ByValArray, SizeConst = 1024)]
         public byte[] Lower { get; set; }           // (0,32)
-
         public short LevelNumber { get; set; }      // (0,64)
         public short TotalLevelCount { get; set; }  // (2,64)
         public short InitialTimeLimit { get; set; } // (4,64)
@@ -19,7 +18,7 @@ namespace CCMemory
         public short IsSliding { get; set; }        // (12,64)
         public short IsBuffered { get; set; }       // (14,64)
         public short ShowStartScreen { get; set; }  // (16,64)
-        public Point BufferLocation { get; set; }   // (18,64)
+        public Point BufferDirection { get; set; }   // (18,64)
         public short Autopsy { get; set; }          // (22,64)
         public Point SlidingDirection { get; set; } // (24,64)
         public short InitialMonsterListSize { get; set; }   // (28,64)
@@ -32,23 +31,23 @@ namespace CCMemory
         public ListEntry CloneList { get; set; }        // (6,74)
         public ListEntry TeleportList { get; set; }     // (16,74)
         [field: MarshalAs(UnmanagedType.ByValTStr, SizeConst = 64)]
-        public string Title { get; set; }          // (16,76)
+        public string Title { get; set; }               // (26,74)
         [field: MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
-        public string Hint { get; set; }           // (16,80)
+        public string Hint { get; set; }                // (26,76)
         [field: MarshalAs(UnmanagedType.ByValTStr, SizeConst = 10)]
-        public string Password { get; set; }       // (26,80)
-        public Point ViewportLocation { get; set; }
-        public Point ViewportSize { get; set; }
-        public Point UnknownPoint { get; set; }
-        public short RestartCount { get; set; }
-        public short HavingTroubleCounter { get; set; }
-        public short MoveCount { get; set; }
-        public short EndingTick { get; set; }
-        public short HaveMouseTarget { get; set; }
-        public Point MouseTarget { get; set; }
-        public short IdleTimer { get; set; }
-        public short ChipHasMoved { get; set; }
-        public short GameStateSize { get; set; }
+        public string Password { get; set; }            // (26,80)
+        public Point ViewportLocation { get; set; }     // (4,81)
+        public Point ViewportSize { get; set; }         // (8,81)
+        public Point UnknownPoint { get; set; }         // (12,81)
+        public short RestartCount { get; set; }         // (16,81)
+        public short HavingTroubleCounter { get; set; } // (18,81)
+        public short MoveCount { get; set; }            // (20,81)
+        public short EndingTick { get; set; }           // (22,81)
+        public short HasMouseTarget { get; set; }       // (24,81)
+        public Point MouseTarget { get; set; }          // (26,81)
+        public short IdleTickCount { get; set; }        // (30,81)
+        public short ChipHasMoved { get; set; }         // (0,82)
+        public short GameStateSize { get; set; }        // (2,82)
     }
 
     [TypeConverter(typeof(BytePointConverter))]

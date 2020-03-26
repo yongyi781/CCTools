@@ -29,8 +29,7 @@ namespace CCMemory
 
         public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
         {
-            string text = value as string;
-            if (text != null)
+            if (value is string text)
             {
                 string text2 = text.Trim();
                 if (text2.Length == 0)

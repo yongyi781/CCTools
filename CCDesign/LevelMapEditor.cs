@@ -21,10 +21,10 @@ namespace CCTools.CCDesign
 		static readonly Brush SelectionBrush = new SolidBrush(Color.FromArgb(128, 51, 153, 255));
 		static readonly Pen CurrentTilePen = new Pen(Color.FromArgb(51, 153, 255), 1);
 		static readonly Brush CurrentTileBrush = new SolidBrush(Color.FromArgb(64, 51, 153, 255));
-		private Form1 _owner;
-		private UndoRedoManager _history;
-		private Collection<HighlightMarker> _tileHighlights = new Collection<HighlightMarker>();
-		private Collection<HighlightMarker> _intermediateConnectionHighlights = new Collection<HighlightMarker>();
+		private readonly Form1 _owner;
+		private readonly UndoRedoManager _history;
+		private readonly Collection<HighlightMarker> _tileHighlights = new Collection<HighlightMarker>();
+		private readonly Collection<HighlightMarker> _intermediateConnectionHighlights = new Collection<HighlightMarker>();
 		private MouseButtons _mouseButtons;
 		private TileConnection currentConnection = TileConnection.Invalid;
 
@@ -35,7 +35,7 @@ namespace CCTools.CCDesign
 		public LevelMapEditor(Form1 owner, Level level)
 		{
 			_owner = owner;
-			this.level = level;
+			this.Level = level;
 			_history = new UndoRedoManager(this);
 			Size = new Size(_owner.TileSize * 32, _owner.TileSize * 32);
 			TabStop = false;
@@ -76,11 +76,7 @@ namespace CCTools.CCDesign
 			get { return NativeMethods.IsClipboardFormatAvailable(NativeMethods.RegisterClipboardFormat(Level.ChipEditMapSectFormat)); }
 		}
 
-		private Collection<HighlightMarker> customTileHighlights = new Collection<HighlightMarker>();
-		public Collection<HighlightMarker> CustomTileHighlights
-		{
-			get { return customTileHighlights; }
-		}
+		public Collection<HighlightMarker> CustomTileHighlights { get; } = new Collection<HighlightMarker>();
 
 		private TileLocation currentTileLocation = TileLocation.Invalid;
 		public TileLocation CurrentTileLocation
@@ -88,11 +84,7 @@ namespace CCTools.CCDesign
 			get { return currentTileLocation; }
 		}
 
-		private TileLocationCollection tileLocationHistory = new TileLocationCollection();
-		public TileLocationCollection TileLocationHistory
-		{
-			get { return tileLocationHistory; }
-		}
+		public TileLocationCollection TileLocationHistory { get; } = new TileLocationCollection();
 
 		public bool IsChanged
 		{
@@ -122,11 +114,7 @@ namespace CCTools.CCDesign
 			set { _owner.RightTile = value; }
 		}
 
-		private Level level;
-		public Level Level
-		{
-			get { return level; }
-		}
+		public Level Level { get; }
 
 		private TileRectangle selection = TileRectangle.Empty;
 		public TileRectangle Selection
@@ -260,19 +248,19 @@ namespace CCTools.CCDesign
 				case LayerMode.UpperLayer:
 					for (int y = 0; y < selectionRect.Height; y++)
 						for (int x = 0; x < selectionRect.Width; x++)
-							upperLayer[x, y] = level.UpperLayer[x + selectionRect.X, y + selectionRect.Y];
+							upperLayer[x, y] = Level.UpperLayer[x + selectionRect.X, y + selectionRect.Y];
 					break;
 				case LayerMode.LowerLayer:
 					for (int y = 0; y < selectionRect.Height; y++)
 						for (int x = 0; x < selectionRect.Width; x++)
-							lowerLayer[x, y] = level.LowerLayer[x + selectionRect.X, y + selectionRect.Y];
+							lowerLayer[x, y] = Level.LowerLayer[x + selectionRect.X, y + selectionRect.Y];
 					break;
 				case LayerMode.Both:
 					for (int y = 0; y < selectionRect.Height; y++)
 						for (int x = 0; x < selectionRect.Width; x++)
 						{
-							upperLayer[x, y] = level.UpperLayer[x + selectionRect.X, y + selectionRect.Y];
-							lowerLayer[x, y] = level.LowerLayer[x + selectionRect.X, y + selectionRect.Y];
+							upperLayer[x, y] = Level.UpperLayer[x + selectionRect.X, y + selectionRect.Y];
+							lowerLayer[x, y] = Level.LowerLayer[x + selectionRect.X, y + selectionRect.Y];
 						}
 					break;
 				default:
@@ -326,7 +314,7 @@ namespace CCTools.CCDesign
 						{
 							g.PixelOffsetMode = PixelOffsetMode.HighQuality;
 							g.InterpolationMode = _owner.TileSize >= 32 ? InterpolationMode.NearestNeighbor : InterpolationMode.Default;
-							level.Draw(g, _owner.Tileset, _owner.LayerMode, selectionRect, _owner.TileSize);
+							Level.Draw(g, _owner.Tileset, _owner.LayerMode, selectionRect, _owner.TileSize);
 						}
 						NativeMethods.SetClipboardData(NativeMethods.CF_BITMAP, NativeMethods.GetCompatibleBitmap(_owner, bmp));
 					}
@@ -401,7 +389,7 @@ namespace CCTools.CCDesign
 
 		public void PopulateMonsters()
 		{
-			var monsters = level.PopulateMonsters();
+			var monsters = Level.PopulateMonsters();
 			if (monsters.Length > 0)
 			{
 				_history.BeginCompoundCommand("Populate Monsters");
@@ -418,13 +406,11 @@ namespace CCTools.CCDesign
 
 		public void Undo()
 		{
-			var levelEditCommand = _history.NextUndoCommand as ChangeTileCommand;
 			_history.Undo();
 		}
 
 		public void Redo()
 		{
-			var levelEditCommand = _history.NextRedoCommand as ChangeTileCommand;
 			_history.Redo();
 		}
 
@@ -436,20 +422,20 @@ namespace CCTools.CCDesign
 			{
 				case LayerMode.UpperLayer:
 					foreach (var location in array)
-						if (level.UpperLayer[location] == oldTile)
+						if (Level.UpperLayer[location] == oldTile)
 							SetUpperLayerTile(location, newTile);
 					break;
 				case LayerMode.LowerLayer:
 					foreach (var location in array)
-						if (level.LowerLayer[location] == oldTile)
+						if (Level.LowerLayer[location] == oldTile)
 							SetLowerLayerTile(location, newTile);
 					break;
 				case LayerMode.Both:
 					foreach (var location in array)
 					{
-						if (level.UpperLayer[location] == oldTile)
+						if (Level.UpperLayer[location] == oldTile)
 							SetUpperLayerTile(location, newTile);
-						if (level.LowerLayer[location] == oldTile)
+						if (Level.LowerLayer[location] == oldTile)
 							SetLowerLayerTile(location, newTile);
 					}
 					break;
@@ -515,10 +501,10 @@ namespace CCTools.CCDesign
 
 		public void SetLowerLayerTile(TileLocation location, Tile tile)
 		{
-			var oldLowerTile = level.LowerLayer[location];
+			var oldLowerTile = Level.LowerLayer[location];
 			if (tile == oldLowerTile)
 				return;
-			var upperTile = level.UpperLayer[location];
+			var upperTile = Level.UpperLayer[location];
 			_history.BeginCompoundCommand("Change Tile");
 			_history.Do(new ChangeTileCommand(true, location, oldLowerTile, tile));
 			UpdateMonsterLocationsAndConnections(location, upperTile, tile, upperTile, oldLowerTile);
@@ -527,10 +513,10 @@ namespace CCTools.CCDesign
 
 		public void SetUpperLayerTile(TileLocation location, Tile tile)
 		{
-			var oldUpperTile = level.UpperLayer[location];
+			var oldUpperTile = Level.UpperLayer[location];
 			if (tile == oldUpperTile)
 				return;
-			var lowerTile = level.LowerLayer[location];
+			var lowerTile = Level.LowerLayer[location];
 			_history.BeginCompoundCommand("Change Tile");
 			_history.Do(new ChangeTileCommand(false, location, oldUpperTile, tile));
 			UpdateMonsterLocationsAndConnections(location, tile, lowerTile, oldUpperTile, lowerTile);
@@ -545,29 +531,29 @@ namespace CCTools.CCDesign
 			{
 				case LayerMode.UpperLayer:
 					foreach (var location in array)
-						if (level.UpperLayer[location] == Tile.ToggleDoorClosed)
+						if (Level.UpperLayer[location] == Tile.ToggleDoorClosed)
 							SetUpperLayerTile(location, Tile.ToggleDoorOpen);
-						else if (level.UpperLayer[location] == Tile.ToggleDoorOpen)
+						else if (Level.UpperLayer[location] == Tile.ToggleDoorOpen)
 							SetUpperLayerTile(location, Tile.ToggleDoorClosed);
 					break;
 				case LayerMode.LowerLayer:
 					foreach (var location in array)
-						if (level.LowerLayer[location] == Tile.ToggleDoorClosed)
+						if (Level.LowerLayer[location] == Tile.ToggleDoorClosed)
 							SetLowerLayerTile(location, Tile.ToggleDoorOpen);
-						else if (level.LowerLayer[location] == Tile.ToggleDoorOpen)
+						else if (Level.LowerLayer[location] == Tile.ToggleDoorOpen)
 							SetLowerLayerTile(location, Tile.ToggleDoorClosed);
 					break;
 				case LayerMode.Both:
 					foreach (var location in array)
 					{
-						if (level.UpperLayer[location] == Tile.ToggleDoorClosed)
+						if (Level.UpperLayer[location] == Tile.ToggleDoorClosed)
 							SetUpperLayerTile(location, Tile.ToggleDoorOpen);
-						else if (level.UpperLayer[location] == Tile.ToggleDoorOpen)
+						else if (Level.UpperLayer[location] == Tile.ToggleDoorOpen)
 							SetUpperLayerTile(location, Tile.ToggleDoorClosed);
 
-						if (level.LowerLayer[location] == Tile.ToggleDoorClosed)
+						if (Level.LowerLayer[location] == Tile.ToggleDoorClosed)
 							SetLowerLayerTile(location, Tile.ToggleDoorOpen);
-						else if (level.LowerLayer[location] == Tile.ToggleDoorOpen)
+						else if (Level.LowerLayer[location] == Tile.ToggleDoorOpen)
 							SetLowerLayerTile(location, Tile.ToggleDoorClosed);
 					}
 					break;
@@ -597,8 +583,8 @@ namespace CCTools.CCDesign
 
 			_owner.EditorTool.OnMouseDown(this, location, _mouseButtons, ModifierKeys);
 
-			var upperTile = level.UpperLayer[location];
-			var lowerTile = level.LowerLayer[location];
+			var upperTile = Level.UpperLayer[location];
+			var lowerTile = Level.LowerLayer[location];
 
 			if (upperTile != Tile.Floor || lowerTile != Tile.Floor)
 				_owner.ItemDescriptionStatusText = lowerTile == Tile.Floor ? TileUtilities.GetDescription(upperTile) : string.Format(CultureInfo.CurrentCulture, "{0} | {1}", TileUtilities.GetDescription(upperTile), TileUtilities.GetDescription(lowerTile));
@@ -628,8 +614,8 @@ namespace CCTools.CCDesign
 
 			_owner.EditorTool.OnMouseMove(this, location, _mouseButtons, ModifierKeys);
 
-			var upperTile = level.UpperLayer[location];
-			var lowerTile = level.LowerLayer[location];
+			var upperTile = Level.UpperLayer[location];
+			var lowerTile = Level.LowerLayer[location];
 
 			if (upperTile != Tile.Floor || lowerTile != Tile.Floor)
 				_owner.ItemDescriptionStatusText = lowerTile == Tile.Floor ? TileUtilities.GetDescription(upperTile) : string.Format(CultureInfo.CurrentCulture, "{0} | {1}", TileUtilities.GetDescription(upperTile), TileUtilities.GetDescription(lowerTile));
@@ -655,12 +641,12 @@ namespace CCTools.CCDesign
 			e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
 			e.Graphics.InterpolationMode = _owner.TileSize >= 32 ? InterpolationMode.NearestNeighbor : InterpolationMode.Default;
 
-			level.Draw(e.Graphics, _owner.Tileset, _owner.LayerMode, e.ClipRectangle, _owner.TileSize);
+			Level.Draw(e.Graphics, _owner.Tileset, _owner.LayerMode, _owner.TileSize);
 			DrawCurrentTile(e.Graphics);
 			DrawSelection(e);
 			foreach (var highlight in _tileHighlights)
 				highlight.Draw(e.Graphics, _owner.TileSize);
-			foreach (var highlight in customTileHighlights)
+			foreach (var highlight in CustomTileHighlights)
 				highlight.Draw(e.Graphics, _owner.TileSize);
 			foreach (var highlight in _intermediateConnectionHighlights)
 				highlight.Draw(e.Graphics, _owner.TileSize);
@@ -706,7 +692,7 @@ namespace CCTools.CCDesign
 
 		public void RemoveTrapConnectionAt(int index)
 		{
-			if (index >= 0 && index < level.TrapConnections.Count)
+			if (index >= 0 && index < Level.TrapConnections.Count)
 				_history.Do(new RemoveTrapConnectionCommand(index));
 		}
 
@@ -717,7 +703,7 @@ namespace CCTools.CCDesign
 
 		public void RemoveCloneConnectionAt(int index)
 		{
-			if (index >= 0 && index < level.CloneConnections.Count)
+			if (index >= 0 && index < Level.CloneConnections.Count)
 				_history.Do(new RemoveCloneConnectionCommand(index));
 		}
 
@@ -733,7 +719,7 @@ namespace CCTools.CCDesign
 
 		public void RemoveMonsterAt(int index)
 		{
-			if (index >= 0 && index < level.MonsterLocations.Count)
+			if (index >= 0 && index < Level.MonsterLocations.Count)
 				_history.Do(new RemoveMonsterCommand(index));
 		}
 
@@ -763,8 +749,8 @@ namespace CCTools.CCDesign
 		internal void UpdateTileDescription()
 		{
 			var location = currentTileLocation;
-			var upperTile = level.UpperLayer[location];
-			var lowerTile = level.LowerLayer[location];
+			var upperTile = Level.UpperLayer[location];
+			var lowerTile = Level.LowerLayer[location];
 			if (upperTile != Tile.Floor || lowerTile != Tile.Floor)
 				_owner.ItemDescriptionStatusText = lowerTile == Tile.Floor ? TileUtilities.GetDescription(upperTile) : string.Format(CultureInfo.CurrentCulture, "{0} | {1}", TileUtilities.GetDescription(upperTile), TileUtilities.GetDescription(lowerTile));
 			else
@@ -782,10 +768,10 @@ namespace CCTools.CCDesign
 			foreach (var highlight in oldHighlights)
 				highlight.Invalidate(this);
 
-			var upperTile = level.UpperLayer[location];
+			var upperTile = Level.UpperLayer[location];
 			if (upperTile == Tile.Teleport)
 			{
-				var nextTeleport = level.UpperLayer.FindNextTeleport(location);
+				var nextTeleport = Level.UpperLayer.FindNextTeleport(location);
 				if (nextTeleport.IsValid())
 				{
 					var marker = HighlightMarker.FromTeleportConnection(new TileConnection(location, nextTeleport));
@@ -795,7 +781,7 @@ namespace CCTools.CCDesign
 				}
 			}
 
-			var cloneDestinations = level.CloneConnections.GetDestinationsFromSource(location);
+			var cloneDestinations = Level.CloneConnections.GetDestinationsFromSource(location);
 			if (cloneDestinations != null && cloneDestinations.Count > 0)
 			{
 				var sb = new StringBuilder();
@@ -812,7 +798,7 @@ namespace CCTools.CCDesign
 				_owner.CoordinatesStatusText += string.Format(CultureInfo.CurrentCulture, " → {1}", location, sb);
 			}
 
-			var cloneSources = level.CloneConnections.GetSourcesFromDestination(location);
+			var cloneSources = Level.CloneConnections.GetSourcesFromDestination(location);
 			if (cloneSources != null && cloneSources.Count > 0)
 			{
 				var sb = new StringBuilder();
@@ -829,7 +815,7 @@ namespace CCTools.CCDesign
 				_owner.CoordinatesStatusText += string.Format(CultureInfo.CurrentCulture, " ← {1}", location, sb);
 			}
 
-			var trapDestinations = level.TrapConnections.GetDestinationsFromSource(location);
+			var trapDestinations = Level.TrapConnections.GetDestinationsFromSource(location);
 			if (trapDestinations != null && trapDestinations.Count > 0)
 			{
 				var sb = new StringBuilder();
@@ -846,7 +832,7 @@ namespace CCTools.CCDesign
 				_owner.CoordinatesStatusText += string.Format(CultureInfo.CurrentCulture, " → {1}", location, sb);
 			}
 
-			var trapSources = level.TrapConnections.GetSourcesFromDestination(location);
+			var trapSources = Level.TrapConnections.GetSourcesFromDestination(location);
 			if (trapSources != null && trapSources.Count > 0)
 			{
 				var sb = new StringBuilder();
@@ -866,27 +852,27 @@ namespace CCTools.CCDesign
 
 		private void UpdateMonsterLocationsAndConnections(TileLocation location, Tile upperTile, Tile lowerTile, Tile oldUpperTile, Tile oldLowerTile)
 		{
-			if (!level.MonsterLocations.Contains(location) && TileUtilities.IsMonster(upperTile, lowerTile))
+			if (!Level.MonsterLocations.Contains(location) && TileUtilities.IsMonster(upperTile, lowerTile))
 				_history.Do(new AddMonsterCommand(location));
-			if (level.MonsterLocations.Contains(location) && !TileUtilities.IsMonster(upperTile, lowerTile))
+			if (Level.MonsterLocations.Contains(location) && !TileUtilities.IsMonster(upperTile, lowerTile))
 				_history.Do(new RemoveMonsterCommand(location));
 
 			if (!TileUtilities.IsEmpty(oldUpperTile, oldLowerTile) && TileUtilities.IsEmpty(upperTile, lowerTile))
 			{
-				var trapSources = level.TrapConnections.GetSourcesFromDestination(location);
+				var trapSources = Level.TrapConnections.GetSourcesFromDestination(location);
 				if (trapSources != null && trapSources.Count > 0)
 					foreach (var source in trapSources)
 						_history.Do(new RemoveTrapConnectionCommand(source, location));
-				var trapDestinations = level.TrapConnections.GetDestinationsFromSource(location);
+				var trapDestinations = Level.TrapConnections.GetDestinationsFromSource(location);
 				if (trapDestinations != null && trapDestinations.Count > 0)
 					foreach (var destination in trapDestinations)
 						_history.Do(new RemoveTrapConnectionCommand(location, destination));
 
-				var cloneSources = level.CloneConnections.GetSourcesFromDestination(location);
+				var cloneSources = Level.CloneConnections.GetSourcesFromDestination(location);
 				if (cloneSources != null && cloneSources.Count > 0)
 					foreach (var source in cloneSources)
 						_history.Do(new RemoveCloneConnectionCommand(source, location));
-				var cloneDestinations = level.CloneConnections.GetDestinationsFromSource(location);
+				var cloneDestinations = Level.CloneConnections.GetDestinationsFromSource(location);
 				if (cloneDestinations != null && cloneDestinations.Count > 0)
 					foreach (var destination in cloneDestinations)
 						_history.Do(new RemoveCloneConnectionCommand(location, destination));

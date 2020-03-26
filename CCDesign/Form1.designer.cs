@@ -2454,6 +2454,7 @@
             // Form1
             // 
             resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.closeTabButton);
             this.Controls.Add(this.toolStripContainer);
             this.KeyPreview = true;

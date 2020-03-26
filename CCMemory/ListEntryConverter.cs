@@ -5,8 +5,10 @@ using System.ComponentModel;
 using System.ComponentModel.Design.Serialization;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CCMemory
 {
@@ -50,7 +52,9 @@ namespace CCMemory
 
         public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, object value, Attribute[] attributes)
         {
-            return TypeDescriptor.GetProperties(typeof(ListEntry), attributes);
+            var list = from PropertyDescriptor prop in TypeDescriptor.GetProperties(typeof(ListEntry), attributes)
+                       select TypeDescriptor.CreateProperty(typeof(ListEntry), prop, new DescriptionAttribute("hello"));
+            return new PropertyDescriptorCollection(list.ToArray());
         }
     }
 }

@@ -177,6 +177,759 @@
   <data name="splitContainer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="&gt;&gt;rightPictureBox.Name" xml:space="preserve">
+    <value>rightPictureBox</value>
+  </data>
+  <data name="&gt;&gt;rightPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rightPictureBox.Parent" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;rightPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;leftPictureBox.Name" xml:space="preserve">
+    <value>leftPictureBox</value>
+  </data>
+  <data name="&gt;&gt;leftPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftPictureBox.Parent" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;leftPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rightLabel.Name" xml:space="preserve">
+    <value>rightLabel</value>
+  </data>
+  <data name="&gt;&gt;rightLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rightLabel.Parent" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;rightLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;leftLabel.Name" xml:space="preserve">
+    <value>leftLabel</value>
+  </data>
+  <data name="&gt;&gt;leftLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftLabel.Parent" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;leftLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.Name" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.Parent" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="toolboxTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="toolboxTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 515</value>
+  </data>
+  <data name="toolboxTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="toolboxTabPage.Text" xml:space="preserve">
+    <value>Toolbox</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabPage.Name" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabPage.Parent" xml:space="preserve">
+    <value>leftTabControl</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="levelExplorerListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="levelExplorerContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>236, 17</value>
+  </metadata>
+  <data name="levelExplorerListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="levelExplorerListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 5</value>
+  </data>
+  <data name="levelExplorerListBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>4, 50</value>
+  </data>
+  <data name="levelExplorerListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 169</value>
+  </data>
+  <data name="levelExplorerListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerListBox.Name" xml:space="preserve">
+    <value>levelExplorerListBox</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerListBox.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="titleLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="titleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 186</value>
+  </data>
+  <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 15</value>
+  </data>
+  <data name="titleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>&amp;Title:</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Name" xml:space="preserve">
+    <value>titleLabel</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="titleTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="titleTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 204</value>
+  </data>
+  <data name="titleTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>254</value>
+  </data>
+  <data name="titleTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="titleTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;titleTextBox.Name" xml:space="preserve">
+    <value>titleTextBox</value>
+  </data>
+  <data name="&gt;&gt;titleTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;titleTextBox.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;titleTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="passwordLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 230</value>
+  </data>
+  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 15</value>
+  </data>
+  <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="passwordLabel.Text" xml:space="preserve">
+    <value>&amp;Password:</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.Name" xml:space="preserve">
+    <value>passwordLabel</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="passwordTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="passwordTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 10pt</value>
+  </data>
+  <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 248</value>
+  </data>
+  <data name="passwordTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="passwordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.Name" xml:space="preserve">
+    <value>passwordTextBox</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;passwordTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="newPasswordButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="newPasswordButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="newPasswordButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 248</value>
+  </data>
+  <data name="newPasswordButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="newPasswordButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="newPasswordButton.Text" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="&gt;&gt;newPasswordButton.Name" xml:space="preserve">
+    <value>newPasswordButton</value>
+  </data>
+  <data name="&gt;&gt;newPasswordButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newPasswordButton.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;newPasswordButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="chipsLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="chipsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chipsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 285</value>
+  </data>
+  <data name="chipsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 15</value>
+  </data>
+  <data name="chipsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chipsLabel.Text" xml:space="preserve">
+    <value>&amp;Chips:</value>
+  </data>
+  <data name="&gt;&gt;chipsLabel.Name" xml:space="preserve">
+    <value>chipsLabel</value>
+  </data>
+  <data name="&gt;&gt;chipsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipsLabel.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipsLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="chipsUpDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="chipsUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 283</value>
+  </data>
+  <data name="chipsUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="chipsUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;chipsUpDown.Name" xml:space="preserve">
+    <value>chipsUpDown</value>
+  </data>
+  <data name="&gt;&gt;chipsUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipsUpDown.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipsUpDown.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="countChipsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="countChipsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="countChipsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 283</value>
+  </data>
+  <data name="countChipsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="countChipsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="countChipsButton.Text" xml:space="preserve">
+    <value>&amp;Count</value>
+  </data>
+  <data name="&gt;&gt;countChipsButton.Name" xml:space="preserve">
+    <value>countChipsButton</value>
+  </data>
+  <data name="&gt;&gt;countChipsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;countChipsButton.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;countChipsButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="timeLimitLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="timeLimitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timeLimitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 314</value>
+  </data>
+  <data name="timeLimitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 15</value>
+  </data>
+  <data name="timeLimitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="timeLimitLabel.Text" xml:space="preserve">
+    <value>Time &amp;Limit:</value>
+  </data>
+  <data name="&gt;&gt;timeLimitLabel.Name" xml:space="preserve">
+    <value>timeLimitLabel</value>
+  </data>
+  <data name="&gt;&gt;timeLimitLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeLimitLabel.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;timeLimitLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="timeLimitUpDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="timeLimitUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 312</value>
+  </data>
+  <data name="timeLimitUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 23</value>
+  </data>
+  <data name="timeLimitUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;timeLimitUpDown.Name" xml:space="preserve">
+    <value>timeLimitUpDown</value>
+  </data>
+  <data name="&gt;&gt;timeLimitUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeLimitUpDown.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;timeLimitUpDown.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="noTimeLimitButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="noTimeLimitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="noTimeLimitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 312</value>
+  </data>
+  <data name="noTimeLimitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="noTimeLimitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="noTimeLimitButton.Text" xml:space="preserve">
+    <value>N&amp;one</value>
+  </data>
+  <data name="&gt;&gt;noTimeLimitButton.Name" xml:space="preserve">
+    <value>noTimeLimitButton</value>
+  </data>
+  <data name="&gt;&gt;noTimeLimitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noTimeLimitButton.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;noTimeLimitButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="hintLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="hintLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hintLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 340</value>
+  </data>
+  <data name="hintLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 15</value>
+  </data>
+  <data name="hintLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="hintLabel.Text" xml:space="preserve">
+    <value>Hint:</value>
+  </data>
+  <data name="&gt;&gt;hintLabel.Name" xml:space="preserve">
+    <value>hintLabel</value>
+  </data>
+  <data name="&gt;&gt;hintLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hintLabel.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;hintLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="hintTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="hintTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 358</value>
+  </data>
+  <data name="hintTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>254</value>
+  </data>
+  <data name="hintTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hintTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="hintTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 151</value>
+  </data>
+  <data name="hintTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;hintTextBox.Name" xml:space="preserve">
+    <value>hintTextBox</value>
+  </data>
+  <data name="&gt;&gt;hintTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hintTextBox.Parent" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;hintTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="levelExplorerTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="levelExplorerTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="levelExplorerTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 515</value>
+  </data>
+  <data name="levelExplorerTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="levelExplorerTabPage.Text" xml:space="preserve">
+    <value>Level Explorer</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerTabPage.Name" xml:space="preserve">
+    <value>levelExplorerTabPage</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerTabPage.Parent" xml:space="preserve">
+    <value>leftTabControl</value>
+  </data>
+  <data name="&gt;&gt;levelExplorerTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="leftTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="leftTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="leftTabControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 500</value>
+  </data>
+  <data name="leftTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 543</value>
+  </data>
+  <data name="leftTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;leftTabControl.Name" xml:space="preserve">
+    <value>leftTabControl</value>
+  </data>
+  <data name="&gt;&gt;leftTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;leftTabControl.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;leftTabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Name" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="splitContainer.Panel1MinSize" type="System.Int32, mscorlib">
+    <value>189</value>
+  </data>
+  <data name="rightTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rightTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rightTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1057, 543</value>
+  </data>
+  <data name="rightTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rightTabControl.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rightTabControl.Name" xml:space="preserve">
+    <value>rightTabControl</value>
+  </data>
+  <data name="&gt;&gt;rightTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rightTabControl.Parent" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rightTabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Name" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1250, 543</value>
+  </data>
+  <data name="splitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>189</value>
+  </data>
+  <data name="splitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Name" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Parent" xml:space="preserve">
+    <value>toolStripContainer.ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStripContainer.ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1250, 543</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.ContentPanel.Name" xml:space="preserve">
+    <value>toolStripContainer.ContentPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.ContentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContentPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.ContentPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.ContentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStripContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer.LeftToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toolStripContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer.RightToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="toolStripContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1250, 615</value>
+  </data>
+  <data name="toolStripContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="levelToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>559, 17</value>
+  </metadata>
+  <data name="levelToolStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="levelToolStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="levelToolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 25</value>
+  </data>
+  <data name="levelToolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;levelToolStrip.Name" xml:space="preserve">
+    <value>levelToolStrip</value>
+  </data>
+  <data name="&gt;&gt;levelToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;levelToolStrip.Parent" xml:space="preserve">
+    <value>toolStripContainer.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;levelToolStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="mainToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>431, 17</value>
+  </metadata>
+  <data name="mainToolStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="mainToolStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 25</value>
+  </data>
+  <data name="mainToolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 25</value>
+  </data>
+  <data name="mainToolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainToolStrip.Name" xml:space="preserve">
+    <value>mainToolStrip</value>
+  </data>
+  <data name="&gt;&gt;mainToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainToolStrip.Parent" xml:space="preserve">
+    <value>toolStripContainer.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;mainToolStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.Name" xml:space="preserve">
+    <value>toolStripContainer.TopToolStripPanel</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.Parent" xml:space="preserve">
+    <value>toolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.Name" xml:space="preserve">
+    <value>toolStripContainer</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStripContainer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="rightPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>129, 337</value>
   </data>
@@ -275,6 +1028,357 @@
   </data>
   <data name="toolboxTabControl.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
     <value>Left</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.Name" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;obstaclesTabPage.Name" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;obstaclesTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;obstaclesTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;obstaclesTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;itemsTabPage.Name" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;itemsTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;itemsTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;itemsTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;monstersTabPage.Name" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;monstersTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;monstersTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;monstersTabPage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;miscTabPage.Name" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;miscTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miscTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;miscTabPage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;unusedTabPage.Name" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;unusedTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unusedTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;unusedTabPage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="toolboxTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="toolboxTabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolboxTabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 325</value>
+  </data>
+  <data name="toolboxTabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.Name" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.Parent" xml:space="preserve">
+    <value>toolboxTabPage</value>
+  </data>
+  <data name="&gt;&gt;toolboxTabControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;chipNPictureBox.Name" xml:space="preserve">
+    <value>chipNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipNPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipNPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chipWPictureBox.Name" xml:space="preserve">
+    <value>chipWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipWPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipWPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chipEPictureBox.Name" xml:space="preserve">
+    <value>chipEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipEPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipEPictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chipSPictureBox.Name" xml:space="preserve">
+    <value>chipSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipSPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipSPictureBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;yellowLockPictureBox.Name" xml:space="preserve">
+    <value>yellowLockPictureBox</value>
+  </data>
+  <data name="&gt;&gt;yellowLockPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yellowLockPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;yellowLockPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;greenLockPictureBox.Name" xml:space="preserve">
+    <value>greenLockPictureBox</value>
+  </data>
+  <data name="&gt;&gt;greenLockPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;greenLockPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;greenLockPictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;redLockPictureBox.Name" xml:space="preserve">
+    <value>redLockPictureBox</value>
+  </data>
+  <data name="&gt;&gt;redLockPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;redLockPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;redLockPictureBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;blueLockPictureBox.Name" xml:space="preserve">
+    <value>blueLockPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blueLockPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blueLockPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;blueLockPictureBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;hintPictureBox.Name" xml:space="preserve">
+    <value>hintPictureBox</value>
+  </data>
+  <data name="&gt;&gt;hintPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hintPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;hintPictureBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;exitPictureBox.Name" xml:space="preserve">
+    <value>exitPictureBox</value>
+  </data>
+  <data name="&gt;&gt;exitPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;exitPictureBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;socketPictureBox.Name" xml:space="preserve">
+    <value>socketPictureBox</value>
+  </data>
+  <data name="&gt;&gt;socketPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;socketPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;socketPictureBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;chipPictureBox.Name" xml:space="preserve">
+    <value>chipPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipPictureBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;panelSEPictureBox.Name" xml:space="preserve">
+    <value>panelSEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;panelSEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSEPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;panelSEPictureBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panelEPictureBox.Name" xml:space="preserve">
+    <value>panelEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;panelEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelEPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;panelEPictureBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panelSPictureBox.Name" xml:space="preserve">
+    <value>panelSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;panelSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelSPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;panelSPictureBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panelWPictureBox.Name" xml:space="preserve">
+    <value>panelWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;panelWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelWPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;panelWPictureBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panelNPictureBox.Name" xml:space="preserve">
+    <value>panelNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;panelNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelNPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;panelNPictureBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;wallPictureBox.Name" xml:space="preserve">
+    <value>wallPictureBox</value>
+  </data>
+  <data name="&gt;&gt;wallPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wallPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;wallPictureBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;floorPictureBox.Name" xml:space="preserve">
+    <value>floorPictureBox</value>
+  </data>
+  <data name="&gt;&gt;floorPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;floorPictureBox.Parent" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;floorPictureBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="basicTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 4</value>
+  </data>
+  <data name="basicTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="basicTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 317</value>
+  </data>
+  <data name="basicTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="basicTabPage.Text" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.Name" xml:space="preserve">
+    <value>basicTabPage</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.Parent" xml:space="preserve">
+    <value>toolboxTabControl</value>
+  </data>
+  <data name="&gt;&gt;basicTabPage.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chipNPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 214</value>
@@ -675,32 +1779,260 @@
   <data name="&gt;&gt;floorPictureBox.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="basicTabPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;forceFloorRandomPictureBox.Name" xml:space="preserve">
+    <value>forceFloorRandomPictureBox</value>
+  </data>
+  <data name="&gt;&gt;forceFloorRandomPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceFloorRandomPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;forceFloorRandomPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;recessedWallPictureBox.Name" xml:space="preserve">
+    <value>recessedWallPictureBox</value>
+  </data>
+  <data name="&gt;&gt;recessedWallPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recessedWallPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;recessedWallPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;trapPictureBox.Name" xml:space="preserve">
+    <value>trapPictureBox</value>
+  </data>
+  <data name="&gt;&gt;trapPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trapPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;trapPictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;brownButtonPictureBox.Name" xml:space="preserve">
+    <value>brownButtonPictureBox</value>
+  </data>
+  <data name="&gt;&gt;brownButtonPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;brownButtonPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;brownButtonPictureBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorOpenPictureBox.Name" xml:space="preserve">
+    <value>toggleDoorOpenPictureBox</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorOpenPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorOpenPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorOpenPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorClosedPictureBox.Name" xml:space="preserve">
+    <value>toggleDoorClosedPictureBox</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorClosedPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorClosedPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;toggleDoorClosedPictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;greenButtonPictureBox.Name" xml:space="preserve">
+    <value>greenButtonPictureBox</value>
+  </data>
+  <data name="&gt;&gt;greenButtonPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;greenButtonPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;greenButtonPictureBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;iceSWPictureBox.Name" xml:space="preserve">
+    <value>iceSWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;iceSWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iceSWPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;iceSWPictureBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;iceSEPictureBox.Name" xml:space="preserve">
+    <value>iceSEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;iceSEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iceSEPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;iceSEPictureBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;iceNEPictureBox.Name" xml:space="preserve">
+    <value>iceNEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;iceNEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iceNEPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;iceNEPictureBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;iceNWPictureBox.Name" xml:space="preserve">
+    <value>iceNWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;iceNWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iceNWPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;iceNWPictureBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;icePictureBox.Name" xml:space="preserve">
+    <value>icePictureBox</value>
+  </data>
+  <data name="&gt;&gt;icePictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;icePictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;icePictureBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;forceFloorWPictureBox.Name" xml:space="preserve">
+    <value>forceFloorWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;forceFloorWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceFloorWPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;forceFloorWPictureBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;forceFloorEPictureBox.Name" xml:space="preserve">
+    <value>forceFloorEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;forceFloorEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceFloorEPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;forceFloorEPictureBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;forceFloorNPictureBox.Name" xml:space="preserve">
+    <value>forceFloorNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;forceFloorNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceFloorNPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;forceFloorNPictureBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;forceFloorSPictureBox.Name" xml:space="preserve">
+    <value>forceFloorSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;forceFloorSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;forceFloorSPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;forceFloorSPictureBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;bombPictureBox.Name" xml:space="preserve">
+    <value>bombPictureBox</value>
+  </data>
+  <data name="&gt;&gt;bombPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bombPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;bombPictureBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;firePictureBox.Name" xml:space="preserve">
+    <value>firePictureBox</value>
+  </data>
+  <data name="&gt;&gt;firePictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firePictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;firePictureBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;waterPictureBox.Name" xml:space="preserve">
+    <value>waterPictureBox</value>
+  </data>
+  <data name="&gt;&gt;waterPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterPictureBox.Parent" xml:space="preserve">
+    <value>obstaclesTabPage</value>
+  </data>
+  <data name="&gt;&gt;waterPictureBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="obstaclesTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 4</value>
   </data>
-  <data name="basicTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="obstaclesTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="basicTabPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="obstaclesTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 317</value>
   </data>
-  <data name="basicTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="obstaclesTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="basicTabPage.Text" xml:space="preserve">
-    <value>Basic</value>
+  <data name="obstaclesTabPage.Text" xml:space="preserve">
+    <value>Obstacles</value>
   </data>
-  <data name="&gt;&gt;basicTabPage.Name" xml:space="preserve">
-    <value>basicTabPage</value>
+  <data name="&gt;&gt;obstaclesTabPage.Name" xml:space="preserve">
+    <value>obstaclesTabPage</value>
   </data>
-  <data name="&gt;&gt;basicTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;obstaclesTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;basicTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;obstaclesTabPage.Parent" xml:space="preserve">
     <value>toolboxTabControl</value>
   </data>
-  <data name="&gt;&gt;basicTabPage.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;obstaclesTabPage.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="forceFloorRandomPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 82</value>
@@ -1101,32 +2433,128 @@
   <data name="&gt;&gt;waterPictureBox.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="obstaclesTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+  <data name="&gt;&gt;suctionShoesPictureBox.Name" xml:space="preserve">
+    <value>suctionShoesPictureBox</value>
   </data>
-  <data name="obstaclesTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;suctionShoesPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;suctionShoesPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;suctionShoesPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;iceSkatesPictureBox.Name" xml:space="preserve">
+    <value>iceSkatesPictureBox</value>
+  </data>
+  <data name="&gt;&gt;iceSkatesPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iceSkatesPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;iceSkatesPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fireBootsPictureBox.Name" xml:space="preserve">
+    <value>fireBootsPictureBox</value>
+  </data>
+  <data name="&gt;&gt;fireBootsPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fireBootsPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;fireBootsPictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;flippersPictureBox.Name" xml:space="preserve">
+    <value>flippersPictureBox</value>
+  </data>
+  <data name="&gt;&gt;flippersPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flippersPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;flippersPictureBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;yellowKeyPictureBox.Name" xml:space="preserve">
+    <value>yellowKeyPictureBox</value>
+  </data>
+  <data name="&gt;&gt;yellowKeyPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yellowKeyPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;yellowKeyPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;greenKeyPictureBox.Name" xml:space="preserve">
+    <value>greenKeyPictureBox</value>
+  </data>
+  <data name="&gt;&gt;greenKeyPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;greenKeyPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;greenKeyPictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;redKeyPictureBox.Name" xml:space="preserve">
+    <value>redKeyPictureBox</value>
+  </data>
+  <data name="&gt;&gt;redKeyPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;redKeyPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;redKeyPictureBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;blueKeyPictureBox.Name" xml:space="preserve">
+    <value>blueKeyPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blueKeyPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blueKeyPictureBox.Parent" xml:space="preserve">
+    <value>itemsTabPage</value>
+  </data>
+  <data name="&gt;&gt;blueKeyPictureBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="itemsTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 4</value>
+  </data>
+  <data name="itemsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="obstaclesTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 317</value>
+  <data name="itemsTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 317</value>
   </data>
-  <data name="obstaclesTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="itemsTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="obstaclesTabPage.Text" xml:space="preserve">
-    <value>Obstacles</value>
+  <data name="itemsTabPage.Text" xml:space="preserve">
+    <value>Items</value>
   </data>
-  <data name="&gt;&gt;obstaclesTabPage.Name" xml:space="preserve">
-    <value>obstaclesTabPage</value>
+  <data name="&gt;&gt;itemsTabPage.Name" xml:space="preserve">
+    <value>itemsTabPage</value>
   </data>
-  <data name="&gt;&gt;obstaclesTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;itemsTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;obstaclesTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;itemsTabPage.Parent" xml:space="preserve">
     <value>toolboxTabControl</value>
   </data>
-  <data name="&gt;&gt;obstaclesTabPage.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;itemsTabPage.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="suctionShoesPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 50</value>
@@ -1296,32 +2724,464 @@
   <data name="&gt;&gt;blueKeyPictureBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="itemsTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+  <data name="&gt;&gt;parameciumEPictureBox.Name" xml:space="preserve">
+    <value>parameciumEPictureBox</value>
   </data>
-  <data name="itemsTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;parameciumEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;parameciumEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;parameciumEPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;parameciumSPictureBox.Name" xml:space="preserve">
+    <value>parameciumSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;parameciumSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;parameciumSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;parameciumSPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;parameciumWPictureBox.Name" xml:space="preserve">
+    <value>parameciumWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;parameciumWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;parameciumWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;parameciumWPictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;parameciumNPictureBox.Name" xml:space="preserve">
+    <value>parameciumNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;parameciumNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;parameciumNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;parameciumNPictureBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;blobEPictureBox.Name" xml:space="preserve">
+    <value>blobEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blobEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blobEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;blobEPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;blobSPictureBox.Name" xml:space="preserve">
+    <value>blobSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blobSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blobSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;blobSPictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;blobWPictureBox.Name" xml:space="preserve">
+    <value>blobWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blobWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blobWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;blobWPictureBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;blobNPictureBox.Name" xml:space="preserve">
+    <value>blobNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blobNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blobNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;blobNPictureBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;walkerEPictureBox.Name" xml:space="preserve">
+    <value>walkerEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;walkerEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;walkerEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;walkerEPictureBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;walkerSPictureBox.Name" xml:space="preserve">
+    <value>walkerSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;walkerSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;walkerSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;walkerSPictureBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;walkerWPictureBox.Name" xml:space="preserve">
+    <value>walkerWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;walkerWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;walkerWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;walkerWPictureBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;walkerNPictureBox.Name" xml:space="preserve">
+    <value>walkerNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;walkerNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;walkerNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;walkerNPictureBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;teethEPictureBox.Name" xml:space="preserve">
+    <value>teethEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;teethEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teethEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;teethEPictureBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;teethSPictureBox.Name" xml:space="preserve">
+    <value>teethSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;teethSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teethSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;teethSPictureBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;teethWPictureBox.Name" xml:space="preserve">
+    <value>teethWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;teethWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teethWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;teethWPictureBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;teethNPictureBox.Name" xml:space="preserve">
+    <value>teethNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;teethNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teethNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;teethNPictureBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;gliderEPictureBox.Name" xml:space="preserve">
+    <value>gliderEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;gliderEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gliderEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;gliderEPictureBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;gliderSPictureBox.Name" xml:space="preserve">
+    <value>gliderSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;gliderSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gliderSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;gliderSPictureBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;gliderWPictureBox.Name" xml:space="preserve">
+    <value>gliderWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;gliderWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gliderWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;gliderWPictureBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;gliderNPictureBox.Name" xml:space="preserve">
+    <value>gliderNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;gliderNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gliderNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;gliderNPictureBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tankEPictureBox.Name" xml:space="preserve">
+    <value>tankEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;tankEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tankEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;tankEPictureBox.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;tankSPictureBox.Name" xml:space="preserve">
+    <value>tankSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;tankSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tankSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;tankSPictureBox.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tankWPictureBox.Name" xml:space="preserve">
+    <value>tankWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;tankWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tankWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;tankWPictureBox.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;tankNPictureBox.Name" xml:space="preserve">
+    <value>tankNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;tankNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tankNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;tankNPictureBox.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;pinkBallEPictureBox.Name" xml:space="preserve">
+    <value>pinkBallEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;pinkBallEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pinkBallEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;pinkBallEPictureBox.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;pinkBallSPictureBox.Name" xml:space="preserve">
+    <value>pinkBallSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;pinkBallSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pinkBallSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;pinkBallSPictureBox.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;pinkBallWPictureBox.Name" xml:space="preserve">
+    <value>pinkBallWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;pinkBallWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pinkBallWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;pinkBallWPictureBox.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;pinkBallNPictureBox.Name" xml:space="preserve">
+    <value>pinkBallNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;pinkBallNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pinkBallNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;pinkBallNPictureBox.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;fireballEPictureBox.Name" xml:space="preserve">
+    <value>fireballEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;fireballEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fireballEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;fireballEPictureBox.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;fireballSPictureBox.Name" xml:space="preserve">
+    <value>fireballSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;fireballSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fireballSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;fireballSPictureBox.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;fireballWPictureBox.Name" xml:space="preserve">
+    <value>fireballWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;fireballWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fireballWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;fireballWPictureBox.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;fireballNPictureBox.Name" xml:space="preserve">
+    <value>fireballNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;fireballNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fireballNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;fireballNPictureBox.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;bugEPictureBox.Name" xml:space="preserve">
+    <value>bugEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;bugEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bugEPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;bugEPictureBox.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;bugSPictureBox.Name" xml:space="preserve">
+    <value>bugSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;bugSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bugSPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;bugSPictureBox.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;bugWPictureBox.Name" xml:space="preserve">
+    <value>bugWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;bugWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bugWPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;bugWPictureBox.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;bugNPictureBox.Name" xml:space="preserve">
+    <value>bugNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;bugNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bugNPictureBox.Parent" xml:space="preserve">
+    <value>monstersTabPage</value>
+  </data>
+  <data name="&gt;&gt;bugNPictureBox.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="monstersTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 4</value>
+  </data>
+  <data name="monstersTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="itemsTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 317</value>
+  <data name="monstersTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 317</value>
   </data>
-  <data name="itemsTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="monstersTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="itemsTabPage.Text" xml:space="preserve">
-    <value>Items</value>
+  <data name="monstersTabPage.Text" xml:space="preserve">
+    <value>Monsters</value>
   </data>
-  <data name="&gt;&gt;itemsTabPage.Name" xml:space="preserve">
-    <value>itemsTabPage</value>
+  <data name="&gt;&gt;monstersTabPage.Name" xml:space="preserve">
+    <value>monstersTabPage</value>
   </data>
-  <data name="&gt;&gt;itemsTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;monstersTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;itemsTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;monstersTabPage.Parent" xml:space="preserve">
     <value>toolboxTabControl</value>
   </data>
-  <data name="&gt;&gt;itemsTabPage.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;monstersTabPage.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="parameciumEPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 262</value>
@@ -2079,32 +3939,224 @@
   <data name="&gt;&gt;bugNPictureBox.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
-  <data name="monstersTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+  <data name="&gt;&gt;blockEPictureBox.Name" xml:space="preserve">
+    <value>blockEPictureBox</value>
   </data>
-  <data name="monstersTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;blockEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blockEPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blockEPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;blockSPictureBox.Name" xml:space="preserve">
+    <value>blockSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blockSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blockSPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blockSPictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;blockWPictureBox.Name" xml:space="preserve">
+    <value>blockWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blockWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blockWPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blockWPictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;blockNPictureBox.Name" xml:space="preserve">
+    <value>blockNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blockNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blockNPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blockNPictureBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;blueButtonPictureBox.Name" xml:space="preserve">
+    <value>blueButtonPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blueButtonPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blueButtonPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blueButtonPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cloningMachinePictureBox.Name" xml:space="preserve">
+    <value>cloningMachinePictureBox</value>
+  </data>
+  <data name="&gt;&gt;cloningMachinePictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cloningMachinePictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;cloningMachinePictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;redButtonPictureBox.Name" xml:space="preserve">
+    <value>redButtonPictureBox</value>
+  </data>
+  <data name="&gt;&gt;redButtonPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;redButtonPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;redButtonPictureBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gravelPictureBox.Name" xml:space="preserve">
+    <value>gravelPictureBox</value>
+  </data>
+  <data name="&gt;&gt;gravelPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gravelPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;gravelPictureBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dirtPictureBox.Name" xml:space="preserve">
+    <value>dirtPictureBox</value>
+  </data>
+  <data name="&gt;&gt;dirtPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dirtPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;dirtPictureBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;blockPictureBox.Name" xml:space="preserve">
+    <value>blockPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blockPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blockPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blockPictureBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;teleportPictureBox.Name" xml:space="preserve">
+    <value>teleportPictureBox</value>
+  </data>
+  <data name="&gt;&gt;teleportPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teleportPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;teleportPictureBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;blueWallFakePictureBox.Name" xml:space="preserve">
+    <value>blueWallFakePictureBox</value>
+  </data>
+  <data name="&gt;&gt;blueWallFakePictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blueWallFakePictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blueWallFakePictureBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;blueWallRealPictureBox.Name" xml:space="preserve">
+    <value>blueWallRealPictureBox</value>
+  </data>
+  <data name="&gt;&gt;blueWallRealPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;blueWallRealPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;blueWallRealPictureBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;spyPictureBox.Name" xml:space="preserve">
+    <value>spyPictureBox</value>
+  </data>
+  <data name="&gt;&gt;spyPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spyPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;spyPictureBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;hiddenWallPictureBox.Name" xml:space="preserve">
+    <value>hiddenWallPictureBox</value>
+  </data>
+  <data name="&gt;&gt;hiddenWallPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hiddenWallPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;hiddenWallPictureBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;invisibleWallPictureBox.Name" xml:space="preserve">
+    <value>invisibleWallPictureBox</value>
+  </data>
+  <data name="&gt;&gt;invisibleWallPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;invisibleWallPictureBox.Parent" xml:space="preserve">
+    <value>miscTabPage</value>
+  </data>
+  <data name="&gt;&gt;invisibleWallPictureBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="miscTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 4</value>
+  </data>
+  <data name="miscTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="monstersTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 317</value>
+  <data name="miscTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 317</value>
   </data>
-  <data name="monstersTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="miscTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="monstersTabPage.Text" xml:space="preserve">
-    <value>Monsters</value>
+  <data name="miscTabPage.Text" xml:space="preserve">
+    <value>Misc.</value>
   </data>
-  <data name="&gt;&gt;monstersTabPage.Name" xml:space="preserve">
-    <value>monstersTabPage</value>
+  <data name="&gt;&gt;miscTabPage.Name" xml:space="preserve">
+    <value>miscTabPage</value>
   </data>
-  <data name="&gt;&gt;monstersTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;miscTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;monstersTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;miscTabPage.Parent" xml:space="preserve">
     <value>toolboxTabControl</value>
   </data>
-  <data name="&gt;&gt;monstersTabPage.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;miscTabPage.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="blockEPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 188</value>
@@ -2442,32 +4494,200 @@
   <data name="&gt;&gt;invisibleWallPictureBox.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="miscTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+  <data name="&gt;&gt;unused38PictureBox.Name" xml:space="preserve">
+    <value>unused38PictureBox</value>
   </data>
-  <data name="miscTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;unused38PictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unused38PictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;unused38PictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;unused37PictureBox.Name" xml:space="preserve">
+    <value>unused37PictureBox</value>
+  </data>
+  <data name="&gt;&gt;unused37PictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unused37PictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;unused37PictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;unused36PictureBox.Name" xml:space="preserve">
+    <value>unused36PictureBox</value>
+  </data>
+  <data name="&gt;&gt;unused36PictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unused36PictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;unused36PictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;unused20PictureBox.Name" xml:space="preserve">
+    <value>unused20PictureBox</value>
+  </data>
+  <data name="&gt;&gt;unused20PictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;unused20PictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;unused20PictureBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chipSwimEPictureBox.Name" xml:space="preserve">
+    <value>chipSwimEPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipSwimEPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipSwimEPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipSwimEPictureBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;chipSwimSPictureBox.Name" xml:space="preserve">
+    <value>chipSwimSPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipSwimSPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipSwimSPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipSwimSPictureBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;chipSwimWPictureBox.Name" xml:space="preserve">
+    <value>chipSwimWPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipSwimWPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipSwimWPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipSwimWPictureBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;chipSwimNPictureBox.Name" xml:space="preserve">
+    <value>chipSwimNPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipSwimNPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipSwimNPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipSwimNPictureBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;fakeExit2PictureBox.Name" xml:space="preserve">
+    <value>fakeExit2PictureBox</value>
+  </data>
+  <data name="&gt;&gt;fakeExit2PictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fakeExit2PictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;fakeExit2PictureBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;fakeExit1PictureBox.Name" xml:space="preserve">
+    <value>fakeExit1PictureBox</value>
+  </data>
+  <data name="&gt;&gt;fakeExit1PictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fakeExit1PictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;fakeExit1PictureBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;chipInExitPictureBox.Name" xml:space="preserve">
+    <value>chipInExitPictureBox</value>
+  </data>
+  <data name="&gt;&gt;chipInExitPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chipInExitPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;chipInExitPictureBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;burntChipPictureBox.Name" xml:space="preserve">
+    <value>burntChipPictureBox</value>
+  </data>
+  <data name="&gt;&gt;burntChipPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;burntChipPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;burntChipPictureBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;burningChipPictureBox.Name" xml:space="preserve">
+    <value>burningChipPictureBox</value>
+  </data>
+  <data name="&gt;&gt;burningChipPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;burningChipPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;burningChipPictureBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;splashPictureBox.Name" xml:space="preserve">
+    <value>splashPictureBox</value>
+  </data>
+  <data name="&gt;&gt;splashPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splashPictureBox.Parent" xml:space="preserve">
+    <value>unusedTabPage</value>
+  </data>
+  <data name="&gt;&gt;splashPictureBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="unusedTabPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 4</value>
+  </data>
+  <data name="unusedTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="miscTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 317</value>
+  <data name="unusedTabPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 317</value>
   </data>
-  <data name="miscTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="unusedTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="miscTabPage.Text" xml:space="preserve">
-    <value>Misc.</value>
+  <data name="unusedTabPage.Text" xml:space="preserve">
+    <value>Unused</value>
   </data>
-  <data name="&gt;&gt;miscTabPage.Name" xml:space="preserve">
-    <value>miscTabPage</value>
+  <data name="&gt;&gt;unusedTabPage.Name" xml:space="preserve">
+    <value>unusedTabPage</value>
   </data>
-  <data name="&gt;&gt;miscTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;unusedTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;miscTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;unusedTabPage.Parent" xml:space="preserve">
     <value>toolboxTabControl</value>
   </data>
-  <data name="&gt;&gt;miscTabPage.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;unusedTabPage.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="unused38PictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>102, 156</value>
@@ -2763,87 +4983,6 @@
   <data name="&gt;&gt;splashPictureBox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="unusedTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
-  </data>
-  <data name="unusedTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="unusedTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 317</value>
-  </data>
-  <data name="unusedTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="unusedTabPage.Text" xml:space="preserve">
-    <value>Unused</value>
-  </data>
-  <data name="&gt;&gt;unusedTabPage.Name" xml:space="preserve">
-    <value>unusedTabPage</value>
-  </data>
-  <data name="&gt;&gt;unusedTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;unusedTabPage.Parent" xml:space="preserve">
-    <value>toolboxTabControl</value>
-  </data>
-  <data name="&gt;&gt;unusedTabPage.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="toolboxTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="toolboxTabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toolboxTabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 325</value>
-  </data>
-  <data name="toolboxTabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabControl.Name" xml:space="preserve">
-    <value>toolboxTabControl</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabControl.Parent" xml:space="preserve">
-    <value>toolboxTabPage</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabControl.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="toolboxTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 24</value>
-  </data>
-  <data name="toolboxTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 515</value>
-  </data>
-  <data name="toolboxTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="toolboxTabPage.Text" xml:space="preserve">
-    <value>Toolbox</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabPage.Name" xml:space="preserve">
-    <value>toolboxTabPage</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabPage.Parent" xml:space="preserve">
-    <value>leftTabControl</value>
-  </data>
-  <data name="&gt;&gt;toolboxTabPage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="levelExplorerListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <metadata name="levelExplorerContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>236, 17</value>
-  </metadata>
   <data name="cutLevelMenuItem.Text" xml:space="preserve">
     <value>C&amp;ut</value>
   </data>
@@ -2858,597 +4997,6 @@
   </data>
   <data name="deleteLevelMenuItem.Text" xml:space="preserve">
     <value>&amp;Delete</value>
-  </data>
-  <data name="levelExplorerListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="levelExplorerListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="levelExplorerListBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 50</value>
-  </data>
-  <data name="levelExplorerListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 124</value>
-  </data>
-  <data name="levelExplorerListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerListBox.Name" xml:space="preserve">
-    <value>levelExplorerListBox</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerListBox.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerListBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="titleLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="titleLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 140</value>
-  </data>
-  <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 15</value>
-  </data>
-  <data name="titleLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="titleLabel.Text" xml:space="preserve">
-    <value>&amp;Title:</value>
-  </data>
-  <data name="&gt;&gt;titleLabel.Name" xml:space="preserve">
-    <value>titleLabel</value>
-  </data>
-  <data name="&gt;&gt;titleLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;titleLabel.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;titleLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="titleTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="titleTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 158</value>
-  </data>
-  <data name="titleTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>254</value>
-  </data>
-  <data name="titleTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 23</value>
-  </data>
-  <data name="titleTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;titleTextBox.Name" xml:space="preserve">
-    <value>titleTextBox</value>
-  </data>
-  <data name="&gt;&gt;titleTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;titleTextBox.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;titleTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="passwordLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 184</value>
-  </data>
-  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 15</value>
-  </data>
-  <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="passwordLabel.Text" xml:space="preserve">
-    <value>&amp;Password:</value>
-  </data>
-  <data name="&gt;&gt;passwordLabel.Name" xml:space="preserve">
-    <value>passwordLabel</value>
-  </data>
-  <data name="&gt;&gt;passwordLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="passwordTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="passwordTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 10pt</value>
-  </data>
-  <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 202</value>
-  </data>
-  <data name="passwordTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
-  </data>
-  <data name="passwordTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;passwordTextBox.Name" xml:space="preserve">
-    <value>passwordTextBox</value>
-  </data>
-  <data name="&gt;&gt;passwordTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;passwordTextBox.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;passwordTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="newPasswordButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="newPasswordButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="newPasswordButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 202</value>
-  </data>
-  <data name="newPasswordButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="newPasswordButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="newPasswordButton.Text" xml:space="preserve">
-    <value>&amp;New</value>
-  </data>
-  <data name="&gt;&gt;newPasswordButton.Name" xml:space="preserve">
-    <value>newPasswordButton</value>
-  </data>
-  <data name="&gt;&gt;newPasswordButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;newPasswordButton.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;newPasswordButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="chipsLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="chipsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chipsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 239</value>
-  </data>
-  <data name="chipsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 15</value>
-  </data>
-  <data name="chipsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="chipsLabel.Text" xml:space="preserve">
-    <value>&amp;Chips:</value>
-  </data>
-  <data name="&gt;&gt;chipsLabel.Name" xml:space="preserve">
-    <value>chipsLabel</value>
-  </data>
-  <data name="&gt;&gt;chipsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chipsLabel.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;chipsLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="chipsUpDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="chipsUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 237</value>
-  </data>
-  <data name="chipsUpDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 23</value>
-  </data>
-  <data name="chipsUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;chipsUpDown.Name" xml:space="preserve">
-    <value>chipsUpDown</value>
-  </data>
-  <data name="&gt;&gt;chipsUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chipsUpDown.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;chipsUpDown.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="countChipsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="countChipsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="countChipsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 237</value>
-  </data>
-  <data name="countChipsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="countChipsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="countChipsButton.Text" xml:space="preserve">
-    <value>&amp;Count</value>
-  </data>
-  <data name="&gt;&gt;countChipsButton.Name" xml:space="preserve">
-    <value>countChipsButton</value>
-  </data>
-  <data name="&gt;&gt;countChipsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;countChipsButton.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;countChipsButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="timeLimitLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="timeLimitLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="timeLimitLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 268</value>
-  </data>
-  <data name="timeLimitLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 15</value>
-  </data>
-  <data name="timeLimitLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="timeLimitLabel.Text" xml:space="preserve">
-    <value>Time &amp;Limit:</value>
-  </data>
-  <data name="&gt;&gt;timeLimitLabel.Name" xml:space="preserve">
-    <value>timeLimitLabel</value>
-  </data>
-  <data name="&gt;&gt;timeLimitLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timeLimitLabel.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;timeLimitLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="timeLimitUpDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="timeLimitUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 266</value>
-  </data>
-  <data name="timeLimitUpDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 23</value>
-  </data>
-  <data name="timeLimitUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;timeLimitUpDown.Name" xml:space="preserve">
-    <value>timeLimitUpDown</value>
-  </data>
-  <data name="&gt;&gt;timeLimitUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timeLimitUpDown.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;timeLimitUpDown.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="noTimeLimitButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="noTimeLimitButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <data name="noTimeLimitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 266</value>
-  </data>
-  <data name="noTimeLimitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="noTimeLimitButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="noTimeLimitButton.Text" xml:space="preserve">
-    <value>N&amp;one</value>
-  </data>
-  <data name="&gt;&gt;noTimeLimitButton.Name" xml:space="preserve">
-    <value>noTimeLimitButton</value>
-  </data>
-  <data name="&gt;&gt;noTimeLimitButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;noTimeLimitButton.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;noTimeLimitButton.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="hintLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="hintLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="hintLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 299</value>
-  </data>
-  <data name="hintLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 15</value>
-  </data>
-  <data name="hintLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="hintLabel.Text" xml:space="preserve">
-    <value>Hint:</value>
-  </data>
-  <data name="&gt;&gt;hintLabel.Name" xml:space="preserve">
-    <value>hintLabel</value>
-  </data>
-  <data name="&gt;&gt;hintLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hintLabel.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;hintLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="hintTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="hintTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 317</value>
-  </data>
-  <data name="hintTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>254</value>
-  </data>
-  <data name="hintTextBox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="hintTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="hintTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 194</value>
-  </data>
-  <data name="hintTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;hintTextBox.Name" xml:space="preserve">
-    <value>hintTextBox</value>
-  </data>
-  <data name="&gt;&gt;hintTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hintTextBox.Parent" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;hintTextBox.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="levelExplorerTabPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="levelExplorerTabPage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="levelExplorerTabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 517</value>
-  </data>
-  <data name="levelExplorerTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="levelExplorerTabPage.Text" xml:space="preserve">
-    <value>Level Explorer</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerTabPage.Name" xml:space="preserve">
-    <value>levelExplorerTabPage</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerTabPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerTabPage.Parent" xml:space="preserve">
-    <value>leftTabControl</value>
-  </data>
-  <data name="&gt;&gt;levelExplorerTabPage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="leftTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="leftTabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="leftTabControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 500</value>
-  </data>
-  <data name="leftTabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 543</value>
-  </data>
-  <data name="leftTabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;leftTabControl.Name" xml:space="preserve">
-    <value>leftTabControl</value>
-  </data>
-  <data name="&gt;&gt;leftTabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;leftTabControl.Parent" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;leftTabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.Name" xml:space="preserve">
-    <value>splitContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.Parent" xml:space="preserve">
-    <value>splitContainer</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="splitContainer.Panel1MinSize" type="System.Int32, mscorlib">
-    <value>189</value>
-  </data>
-  <data name="rightTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="rightTabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="rightTabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1057, 543</value>
-  </data>
-  <data name="rightTabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="rightTabControl.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;rightTabControl.Name" xml:space="preserve">
-    <value>rightTabControl</value>
-  </data>
-  <data name="&gt;&gt;rightTabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rightTabControl.Parent" xml:space="preserve">
-    <value>splitContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;rightTabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel2.Name" xml:space="preserve">
-    <value>splitContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1250, 543</value>
-  </data>
-  <data name="splitContainer.SplitterDistance" type="System.Int32, mscorlib">
-    <value>189</value>
-  </data>
-  <data name="splitContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Name" xml:space="preserve">
-    <value>splitContainer</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.Parent" xml:space="preserve">
-    <value>toolStripContainer.ContentPanel</value>
-  </data>
-  <data name="&gt;&gt;splitContainer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="toolStripContainer.ContentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1250, 543</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.ContentPanel.Name" xml:space="preserve">
-    <value>toolStripContainer.ContentPanel</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.ContentPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripContentPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.ContentPanel.Parent" xml:space="preserve">
-    <value>toolStripContainer</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.ContentPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="toolStripContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.Name" xml:space="preserve">
-    <value>toolStripContainer.LeftToolStripPanel</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.Parent" xml:space="preserve">
-    <value>toolStripContainer</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.LeftToolStripPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="toolStripContainer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.Name" xml:space="preserve">
-    <value>toolStripContainer.RightToolStripPanel</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.Parent" xml:space="preserve">
-    <value>toolStripContainer</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.RightToolStripPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="toolStripContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1250, 615</value>
-  </data>
-  <data name="toolStripContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <metadata name="levelToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>559, 17</value>
-  </metadata>
-  <data name="levelToolStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
   </data>
   <data name="addLevelToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3669,33 +5217,6 @@
   </data>
   <data name="testToolStripButton.ToolTipText" xml:space="preserve">
     <value>Test in Chip's Challenge (F5)</value>
-  </data>
-  <data name="levelToolStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="levelToolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 25</value>
-  </data>
-  <data name="levelToolStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;levelToolStrip.Name" xml:space="preserve">
-    <value>levelToolStrip</value>
-  </data>
-  <data name="&gt;&gt;levelToolStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;levelToolStrip.Parent" xml:space="preserve">
-    <value>toolStripContainer.TopToolStripPanel</value>
-  </data>
-  <data name="&gt;&gt;levelToolStrip.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="mainToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>431, 17</value>
-  </metadata>
-  <data name="mainToolStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
   </data>
   <data name="newToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3918,54 +5439,15 @@
   <data name="layerToolStripComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
   </data>
-  <data name="mainToolStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 25</value>
-  </data>
-  <data name="mainToolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 25</value>
-  </data>
-  <data name="mainToolStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;mainToolStrip.Name" xml:space="preserve">
-    <value>mainToolStrip</value>
-  </data>
-  <data name="&gt;&gt;mainToolStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainToolStrip.Parent" xml:space="preserve">
-    <value>toolStripContainer.TopToolStripPanel</value>
-  </data>
-  <data name="&gt;&gt;mainToolStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.Name" xml:space="preserve">
-    <value>toolStripContainer.TopToolStripPanel</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.Parent" xml:space="preserve">
-    <value>toolStripContainer</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.TopToolStripPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.Name" xml:space="preserve">
-    <value>toolStripContainer</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolStripContainer.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="mainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="fileMenuItem.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="newMenuItem.Text" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
   <data name="levelSetMenuItem.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
     <value>CtrlShiftN</value>
   </data>
@@ -3977,9 +5459,6 @@
   </data>
   <data name="levelMenuItem.Text" xml:space="preserve">
     <value>&amp;Level</value>
-  </data>
-  <data name="newMenuItem.Text" xml:space="preserve">
-    <value>&amp;New</value>
   </data>
   <data name="openMenuItem.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
     <value>CtrlO</value>
@@ -4023,8 +5502,8 @@
   <data name="exitMenuItem.Text" xml:space="preserve">
     <value>E&amp;xit</value>
   </data>
-  <data name="fileMenuItem.Text" xml:space="preserve">
-    <value>&amp;File</value>
+  <data name="editMenuItem.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
   </data>
   <data name="undoMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4125,8 +5604,11 @@
   <data name="selectAllMenuItem.Text" xml:space="preserve">
     <value>Select &amp;All</value>
   </data>
-  <data name="editMenuItem.Text" xml:space="preserve">
-    <value>&amp;Edit</value>
+  <data name="viewMenuItem.Text" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="zoomMenuItem.Text" xml:space="preserve">
+    <value>&amp;Zoom</value>
   </data>
   <data name="zoom125MenuItem.Text" xml:space="preserve">
     <value>12.5%</value>
@@ -4151,9 +5633,6 @@
   </data>
   <data name="fitToScreenMenuItem.Text" xml:space="preserve">
     <value>&amp;Fit to Screen</value>
-  </data>
-  <data name="zoomMenuItem.Text" xml:space="preserve">
-    <value>&amp;Zoom</value>
   </data>
   <data name="viewSeparator.Text" xml:space="preserve">
     <value>-</value>
@@ -4185,8 +5664,8 @@
   <data name="showGameGraphicsMenuItem.Text" xml:space="preserve">
     <value>&amp;Show Game Graphics</value>
   </data>
-  <data name="viewMenuItem.Text" xml:space="preserve">
-    <value>&amp;View</value>
+  <data name="toolsMenuItem.Text" xml:space="preserve">
+    <value>&amp;Tools</value>
   </data>
   <data name="pathMakerMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -4242,14 +5721,11 @@
   <data name="optionsMenuItem.Text" xml:space="preserve">
     <value>&amp;Options...</value>
   </data>
-  <data name="toolsMenuItem.Text" xml:space="preserve">
-    <value>&amp;Tools</value>
+  <data name="helpMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
   </data>
   <data name="aboutMenuItem.Text" xml:space="preserve">
     <value>&amp;About Chip's Challenge Level Designer</value>
-  </data>
-  <data name="helpMenuItem.Text" xml:space="preserve">
-    <value>&amp;Help</value>
   </data>
   <data name="closeTabButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -4319,6 +5795,9 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>96, 96</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1250, 615</value>
   </data>

@@ -19,7 +19,7 @@ namespace CCTools.CCDesign
             get { return Path.GetDirectoryName(Properties.Settings.Default.ChipsChallengeLocation); }
         }
 
-        public static void Test(IWin32Window owner, LevelSet levelSet, Level level)
+        public static void Test(LevelSet levelSet, Level level)
         {
             if (ccTestProcess != null && !ccTestProcess.HasExited)
             {
@@ -55,7 +55,7 @@ namespace CCTools.CCDesign
             var ccTempPath = Path.Combine(windowsDirectory, "CCTemp.ini");
             var ccTemp = level == null ? Properties.Resources.CCTemp.Replace("Level{0}={1}\r\nCurrent Level={0}\r\n", string.Empty) : string.Format(CultureInfo.CurrentCulture, Properties.Resources.CCTemp, level.Index + 1, level.Password);
             File.WriteAllText(ccTempPath, ccTemp, Encoding.Default);
-            ccTestProcess = Process.Start(new ProcessStartInfo { WorkingDirectory = destPath, FileName = "CCTest.exe" });
+            ccTestProcess = Process.Start(new ProcessStartInfo { WorkingDirectory = destPath, FileName = Path.Combine(destPath, "CCTest.exe") });
         }
 
         static void CopyFiles(string sourcePath, string destPath)

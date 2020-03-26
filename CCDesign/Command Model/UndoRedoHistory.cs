@@ -4,14 +4,13 @@ namespace CCTools.CCDesign
 {
 	public class UndoRedoManager
 	{
-		private LevelMapEditor owner;
-		private Stack<Command> undoStack = new Stack<Command>();
-		private Stack<Command> redoStack = new Stack<Command>();
+		private readonly Stack<Command> undoStack = new Stack<Command>();
+		private readonly Stack<Command> redoStack = new Stack<Command>();
 		private CompoundCommand tempCompoundCommand;
 
 		public UndoRedoManager(LevelMapEditor owner)
 		{
-			this.owner = owner;
+			this.Owner = owner;
 		}
 
 		public bool CanUndo
@@ -29,10 +28,7 @@ namespace CCTools.CCDesign
 			get { return tempCompoundCommand != null; }
 		}
 
-		public LevelMapEditor Owner
-		{
-			get { return owner; }
-		}
+		public LevelMapEditor Owner { get; }
 
 		public Command NextUndoCommand
 		{
@@ -86,7 +82,7 @@ namespace CCTools.CCDesign
 			{
 				redoStack.Clear();
 				undoStack.Push(command);
-				command.Owner = owner;
+				command.Owner = Owner;
 			}
 		}
 
@@ -95,7 +91,7 @@ namespace CCTools.CCDesign
 			if (IsInCompoundMode)
 				tempCompoundCommand.BeginCompoundCommand(name);
 			else
-				tempCompoundCommand = new CompoundCommand(name) { Owner = owner };
+				tempCompoundCommand = new CompoundCommand(name) { Owner = Owner };
 		}
 
 		public void EndCompoundCommand()

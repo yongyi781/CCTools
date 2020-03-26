@@ -15,7 +15,7 @@ namespace CCTools.CCDesign
         #region Fields
 
         private NativeMethods.TIMERPROC _timerProc;
-        private LevelSet _levelSet = new LevelSet();
+        private readonly LevelSet _levelSet = new LevelSet();
         private string _fileName;
 
         #endregion
@@ -245,9 +245,8 @@ namespace CCTools.CCDesign
         private void CloseSelectedTab()
         {
             var selectedIndex = rightTabControl.SelectedIndex;
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
             var nextTab = selectedIndex - 1;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
             {
                 selectedTab.Close();
                 if (nextTab > -1)
@@ -703,8 +702,7 @@ namespace CCTools.CCDesign
                 var indexes = new int[rightTabControl.TabPages.Count];
                 for (int i = 0; i < rightTabControl.TabPages.Count; i++)
                 {
-                    var page = rightTabControl.TabPages[i] as LevelEditorTabPage;
-                    if (page != null)
+                    if (rightTabControl.TabPages[i] is LevelEditorTabPage page)
                         indexes[i] = page._level.Index;
                 }
                 var j = Array.BinarySearch(indexes, currentLevel.Index);
@@ -846,21 +844,6 @@ namespace CCTools.CCDesign
             return false;
         }
 
-        private void SetDeleteMenuItemEnabled(bool enabled)
-        {
-            deleteMenuItem.Enabled = enabled;
-        }
-
-        private void SetUndoMenuItemEnabled(bool enabled)
-        {
-            undoMenuItem.Enabled = enabled;
-        }
-
-        private void SetRedoMenuItemEnabled(bool enabled)
-        {
-            redoMenuItem.Enabled = enabled;
-        }
-
         private void TimerProc(IntPtr hwnd, int uMsg, IntPtr idEvent, int dwTime)
         {
             UpdatePasteEnabled(rightTabControl.SelectedTab as LevelEditorTabPage);
@@ -868,16 +851,15 @@ namespace CCTools.CCDesign
 
         private void UpdateLevelMenuItemsEnabled()
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab == null)
-            {
-                levelExplorerListBox.SelectedIndex = -1;
-                replaceMenuItem.Enabled = selectToolStripButton.Enabled = pathMakerMenuItem.Enabled = pathMakerToolStripButton.Enabled = trapConnectorMenuItem.Enabled = trapConnectorToolStripButton.Enabled = cloneConnectorMenuItem.Enabled = cloneConnectorToolStripButton.Enabled = monstersMenuItem.Enabled = monstersToolStripButton.Enabled = trapConnectionsMenuItem.Enabled = trapConnectionsToolStripButton.Enabled = cloneConnectionsMenuItem.Enabled = cloneConnectionsToolStripButton.Enabled = selectMenuItem.Enabled = fillMenuItem.Enabled = switchTogglesMenuItem.Enabled = false;
-            }
-            else
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
             {
                 levelExplorerListBox.SelectedIndex = selectedTab._level.Index;
                 replaceMenuItem.Enabled = selectToolStripButton.Enabled = pathMakerMenuItem.Enabled = pathMakerToolStripButton.Enabled = trapConnectorMenuItem.Enabled = trapConnectorToolStripButton.Enabled = cloneConnectorMenuItem.Enabled = cloneConnectorToolStripButton.Enabled = monstersMenuItem.Enabled = monstersToolStripButton.Enabled = trapConnectionsMenuItem.Enabled = trapConnectionsToolStripButton.Enabled = cloneConnectionsMenuItem.Enabled = cloneConnectionsToolStripButton.Enabled = selectMenuItem.Enabled = fillMenuItem.Enabled = switchTogglesMenuItem.Enabled = true;
+            }
+            else
+            {
+                levelExplorerListBox.SelectedIndex = -1;
+                replaceMenuItem.Enabled = selectToolStripButton.Enabled = pathMakerMenuItem.Enabled = pathMakerToolStripButton.Enabled = trapConnectorMenuItem.Enabled = trapConnectorToolStripButton.Enabled = cloneConnectorMenuItem.Enabled = cloneConnectorToolStripButton.Enabled = monstersMenuItem.Enabled = monstersToolStripButton.Enabled = trapConnectionsMenuItem.Enabled = trapConnectionsToolStripButton.Enabled = cloneConnectionsMenuItem.Enabled = cloneConnectionsToolStripButton.Enabled = selectMenuItem.Enabled = fillMenuItem.Enabled = switchTogglesMenuItem.Enabled = false;
             }
         }
 
@@ -973,8 +955,7 @@ namespace CCTools.CCDesign
 
             var activeControl = GetRealActiveControl();
 
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
             {
                 undoMenuItem.Enabled = activeTextBox.CanUndo;
                 cutMenuItem.Enabled = copyMenuItem.Enabled = activeTextBox.SelectionLength > 0;
@@ -994,8 +975,7 @@ namespace CCTools.CCDesign
                     if (redoMenuItem.Enabled)
                         redoMenuItem.Text += " " + selectedTab.RedoName;
                     pasteMenuItem.Enabled = LevelMapEditor.CanPaste;
-                    var activeLevelTabPage = selectedTab as LevelEditorTabPage;
-                    if (activeLevelTabPage != null)
+                    if (selectedTab is LevelEditorTabPage activeLevelTabPage)
                     {
                         bool hasSelection = editorTool == EditorTool.Select && !activeLevelTabPage.IsSelectionEmpty;
                         cutMenuItem.Enabled = copyMenuItem.Enabled = deleteMenuItem.Enabled = fillMenuItem.Enabled = hasSelection;
@@ -1003,8 +983,7 @@ namespace CCTools.CCDesign
                     selectAllMenuItem.Enabled = true;
                 }
             }
-            var activeListBox = activeControl as ListBox;
-            if (activeListBox != null)
+            if (activeControl is ListBox activeListBox)
             {
                 cutMenuItem.Enabled = copyMenuItem.Enabled = deleteMenuItem.Enabled = activeListBox.SelectedIndex >= 0;
                 pasteMenuItem.Enabled = NativeMethods.IsClipboardFormatAvailable(NativeMethods.RegisterClipboardFormat(Level.LevelDataFormat));
@@ -1018,29 +997,25 @@ namespace CCTools.CCDesign
         private void undoMenuItem_Click(object sender, EventArgs e)
         {
             var activeControl = GetRealActiveControl();
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
                 activeTextBox.Undo();
             else
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                     selectedTab.Undo();
             }
         }
 
         private void redoMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.Redo();
         }
 
         private void cutButton_Click(object sender, EventArgs e)
         {
             var activeControl = GetRealActiveControl();
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
                 activeTextBox.Cut();
             else
                 if (levelExplorerListBox.Focused && levelExplorerListBox.SelectedIndex >= 0)
@@ -1050,8 +1025,7 @@ namespace CCTools.CCDesign
             }
             else
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                     selectedTab.Cut();
             }
         }
@@ -1059,16 +1033,14 @@ namespace CCTools.CCDesign
         private void copyButton_Click(object sender, EventArgs e)
         {
             var activeControl = GetRealActiveControl();
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
                 activeTextBox.Copy();
             else
                 if (levelExplorerListBox.Focused && levelExplorerListBox.SelectedIndex >= 0)
                 CopyCurrentLevel();
             else
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                     selectedTab.Copy();
             }
         }
@@ -1076,16 +1048,14 @@ namespace CCTools.CCDesign
         private void pasteButton_Click(object sender, EventArgs e)
         {
             var activeControl = GetRealActiveControl();
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
                 activeTextBox.Paste();
             else
                 if (levelExplorerListBox.Focused)
                 PasteLevel();
             else
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                     selectedTab.Paste();
             }
         }
@@ -1093,8 +1063,7 @@ namespace CCTools.CCDesign
         private void deleteMenuItem_Click(object sender, EventArgs e)
         {
             var activeControl = GetRealActiveControl();
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
             {
                 if (activeTextBox.SelectionLength <= 0)
                     activeTextBox.SelectionLength++;
@@ -1105,8 +1074,7 @@ namespace CCTools.CCDesign
                 RemoveCurrentLevel();
             else
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                     selectedTab.DeleteSelection();
             }
         }
@@ -1115,21 +1083,18 @@ namespace CCTools.CCDesign
         {
             if (editorTool != EditorTool.Select)
                 return;
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.FillSelection(leftTile, rightTile);
         }
 
         private void selectAllMenuItem_Click(object sender, EventArgs e)
         {
             var activeControl = GetRealActiveControl();
-            var activeTextBox = activeControl as TextBoxBase;
-            if (activeTextBox != null)
+            if (activeControl is TextBoxBase activeTextBox)
                 activeTextBox.SelectAll();
             else
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 {
                     selectMenuItem.Checked = selectToolStripButton.Checked = true;
                     EditorTool = EditorTool.Select;
@@ -1212,8 +1177,7 @@ namespace CCTools.CCDesign
 
         private void cloneConnectionsMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.ShowCloneConnectionsDialog();
         }
 
@@ -1446,8 +1410,7 @@ namespace CCTools.CCDesign
 
         private void replaceMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.ReplaceAll(leftTile, rightTile);
         }
 
@@ -1468,8 +1431,7 @@ namespace CCTools.CCDesign
 
         private void saveBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            var ex = e.Result as Exception;
-            if (ex != null)
+            if (e.Result is Exception ex)
                 ReportError(ex);
             else
             {
@@ -1489,7 +1451,7 @@ namespace CCTools.CCDesign
 
         private void testMenuItem_Click(object sender, EventArgs e)
         {
-            try { CCTest.Test(this, _levelSet, _levelSet[levelExplorerListBox.SelectedIndex]); }
+            try { CCTest.Test(_levelSet, _levelSet[levelExplorerListBox.SelectedIndex]); }
             catch (FileNotFoundException ex) { ReportError(ex.Message); }
             catch (ArgumentException) { ReportError(Properties.Resources.ChipsChallengeNotSet); }
             catch (ApplicationException ex) { ReportError(ex.Message); }
@@ -1497,8 +1459,7 @@ namespace CCTools.CCDesign
 
         private void toolboxItem_MouseClick(object sender, MouseEventArgs e)
         {
-            var control = sender as PictureBox;
-            if (control == null || control.Tag == null)
+            if (!(sender is PictureBox control) || control.Tag == null)
                 return;
             if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
                 LeftTile = (Tile)control.Tag;
@@ -1508,8 +1469,7 @@ namespace CCTools.CCDesign
 
         private void toolboxItem_MouseEnter(object sender, EventArgs e)
         {
-            var control = sender as Control;
-            if (control != null && control.Tag != null)
+            if (sender is Control control && control.Tag != null)
                 ItemDescriptionStatusText = TileUtilities.GetDescription((Tile)control.Tag);
         }
 
@@ -1525,8 +1485,7 @@ namespace CCTools.CCDesign
 
         private void trapConnectionsMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.ShowTrapConnectionsDialog();
         }
 
