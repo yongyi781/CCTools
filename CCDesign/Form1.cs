@@ -357,6 +357,7 @@ namespace CCTools.CCDesign
             chipsUpDown.DataBindings.Add("Value", _levelSet, "ChipCount", true, DataSourceUpdateMode.OnPropertyChanged);
             timeLimitUpDown.DataBindings.Add("Value", _levelSet, "TimeLimit", true, DataSourceUpdateMode.OnPropertyChanged);
             hintTextBox.DataBindings.Add("Text", _levelSet, "Hint", true, DataSourceUpdateMode.OnPropertyChanged);
+            layerToolStripComboBox.SelectedIndex = 2;
 
             UpdateTitle();
         }
@@ -984,8 +985,7 @@ namespace CCTools.CCDesign
             else
                 if (rightTabControl.TabCount > 0)
             {
-                var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTab != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 {
                     undoMenuItem.Enabled = selectedTab.CanUndo;
                     if (undoMenuItem.Enabled)
@@ -1263,8 +1263,7 @@ namespace CCTools.CCDesign
 
         private void switchTogglesMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.SwitchToggles();
             RefreshSelectedTabFromTool();
         }
@@ -1306,8 +1305,7 @@ namespace CCTools.CCDesign
             if (rightTabControl.TabCount > 0)
             {
                 rightTabControl.SelectedTab.Invalidate(true);
-                var selectedTabPage = rightTabControl.SelectedTab as LevelEditorTabPage;
-                if (selectedTabPage != null)
+                if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTabPage)
                     selectedTabPage.Focus();
             }
         }
@@ -1408,8 +1406,7 @@ namespace CCTools.CCDesign
 
         private void monstersToolStripButton_Click(object sender, EventArgs e)
         {
-            var selectedTab = rightTabControl.SelectedTab as LevelEditorTabPage;
-            if (selectedTab != null)
+            if (rightTabControl.SelectedTab is LevelEditorTabPage selectedTab)
                 selectedTab.ShowMonstersDialog();
         }
 

@@ -1,28 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.98
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCDesign", "CCDesign\CCDesign.csproj", "{4383AEA5-8747-457B-8596-77EDC714D6EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCTools", "CCTools\CCTools.csproj", "{8BFC424E-4FEC-4064-991C-9D2A2A1C59E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeTileset", "MakeTileset\MakeTileset.csproj", "{635342C5-EA71-4AA7-AC03-CD395E564717}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCMemory", "CCMemory\CCMemory.csproj", "{3DA35833-BA6D-46C6-884C-2700E3A8AD54}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://yongyi781.tfspreview.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CCDesign\\CCDesign.csproj
-		SccProjectName1 = CCDesign
-		SccLocalPath1 = CCDesign
-		SccProjectUniqueName2 = CCTools\\CCTools.csproj
-		SccProjectName2 = CCTools
-		SccLocalPath2 = CCTools
-		SccProjectUniqueName3 = MakeTileset\\MakeTileset.csproj
-		SccProjectName3 = MakeTileset
-		SccLocalPath3 = MakeTileset
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -40,8 +29,15 @@ Global
 		{635342C5-EA71-4AA7-AC03-CD395E564717}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635342C5-EA71-4AA7-AC03-CD395E564717}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635342C5-EA71-4AA7-AC03-CD395E564717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA35833-BA6D-46C6-884C-2700E3A8AD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA35833-BA6D-46C6-884C-2700E3A8AD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA35833-BA6D-46C6-884C-2700E3A8AD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA35833-BA6D-46C6-884C-2700E3A8AD54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5895A653-3497-430A-9981-56D25D77CFF3}
 	EndGlobalSection
 EndGlobal

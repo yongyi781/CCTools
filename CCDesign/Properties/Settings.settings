@@ -17,5 +17,8 @@
     <Setting Name="AutomaticallyOpenNewLevels" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="WindowsDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Apps\otvdm-v0.7.0\WINDOWS</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

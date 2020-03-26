@@ -349,74 +349,26 @@ namespace CCTools
 			var titleBytes = GetBytes(title);
 			var hintBytes = GetBytes(hint);
 			var passwordBytes = EncodePasswordWithLength(password);
-
-			var trapConnectionsByteCount = trapConnections.Count;
-			trapConnectionsByteCount = trapConnectionsByteCount + trapConnectionsByteCount + trapConnectionsByteCount + trapConnectionsByteCount + trapConnectionsByteCount;
-			trapConnectionsByteCount += trapConnectionsByteCount;
-
-			var trapConnectionsBytes = new byte[trapConnectionsByteCount + 1];
-			trapConnectionsBytes[0] = (byte)trapConnectionsByteCount;
-			for (int i = 0; i < trapConnections.Count; i++)
-			{
-				var offset = i + i + i + i + i;
-				offset += offset + 1;
-				var connection = trapConnections[i];
-				var source = connection.Source;
-				var destination = connection.Destination;
-				trapConnectionsBytes[offset] = (byte)source.X;
-				trapConnectionsBytes[offset + 2] = (byte)source.Y;
-				trapConnectionsBytes[offset + 4] = (byte)destination.X;
-				trapConnectionsBytes[offset + 6] = (byte)destination.Y;
-			}
-
-			var cloneConnectionsByteCount = cloneConnections.Count;
-			cloneConnectionsByteCount += cloneConnectionsByteCount;
-			cloneConnectionsByteCount += cloneConnectionsByteCount;
-			cloneConnectionsByteCount += cloneConnectionsByteCount;
-			var cloneConnectionsBytes = new byte[cloneConnectionsByteCount + 1];
-			cloneConnectionsBytes[0] = (byte)cloneConnectionsByteCount;
-			for (int i = 0; i < cloneConnections.Count; i++)
-			{
-				var offset = i + i;
-				offset += offset;
-				offset += offset + 1;
-				var connection = cloneConnections[i];
-				var source = connection.Source;
-				var destination = connection.Destination;
-				cloneConnectionsBytes[offset] = (byte)source.X;
-				cloneConnectionsBytes[offset + 2] = (byte)source.Y;
-				cloneConnectionsBytes[offset + 4] = (byte)destination.X;
-				cloneConnectionsBytes[offset + 6] = (byte)destination.Y;
-			}
-
-			var monsterLocationsByteCount = monsterLocations.Count;
-			monsterLocationsByteCount += monsterLocationsByteCount;
-			var monsterLocationsBytes = new byte[monsterLocationsByteCount + 1];
-			monsterLocationsBytes[0] = (byte)monsterLocationsByteCount;
-			for (int i = 0; i < monsterLocations.Count; i++)
-			{
-				var offset = i + i + 1;
-				var location = monsterLocations[i];
-				monsterLocationsBytes[offset] = (byte)location.X;
-				monsterLocationsBytes[offset + 1] = (byte)location.Y;
-			}
+			var trapConnectionsBytes = 10 * trapConnections.Count;
+			var cloneConnectionsBytes = 8 * cloneConnections.Count;
+			var monsterLocationsBytes = 2 * monsterLocations.Count;
 
 			var topLength = (ushort)(upperLayerBytes.Length + lowerLayerBytes.Length + 14);
-			var offsetToNextLevel = topLength;
+			var levelSizeInBytes = topLength;
 			if (titleBytes.Length > 1)
-				offsetToNextLevel += (ushort)(titleBytes.Length + 1);
+				levelSizeInBytes += (ushort)(titleBytes.Length + 1);
 			if (hintBytes.Length > 1)
-				offsetToNextLevel += (ushort)(hintBytes.Length + 1);
+				levelSizeInBytes += (ushort)(hintBytes.Length + 1);
 			if (passwordBytes.Length > 1)
-				offsetToNextLevel += (ushort)(passwordBytes.Length + 1);
-			if (trapConnectionsBytes.Length > 1)
-				offsetToNextLevel += (ushort)(trapConnectionsBytes.Length + 1);
-			if (cloneConnectionsBytes.Length > 1)
-				offsetToNextLevel += (ushort)(cloneConnectionsBytes.Length + 1);
-			if (monsterLocationsBytes.Length > 1)
-				offsetToNextLevel += (ushort)(monsterLocationsBytes.Length + 1);
+				levelSizeInBytes += (ushort)(passwordBytes.Length + 1);
+			if (trapConnections.Count > 0)
+				levelSizeInBytes += (ushort)(trapConnectionsBytes + 2);
+			if (cloneConnections.Count > 0)
+				levelSizeInBytes += (ushort)(cloneConnectionsBytes + 2);
+			if (monsterLocations.Count > 0)
+				levelSizeInBytes += (ushort)(monsterLocationsBytes + 2);
 
-			writer.Write(offsetToNextLevel);
+			writer.Write(levelSizeInBytes);
 
 			writer.Write((ushort)(levelIndex + 1));
 			writer.Write((ushort)timeLimit);
@@ -428,7 +380,7 @@ namespace CCTools
 			writer.Write((ushort)lowerLayerBytes.Length);
 			writer.Write(lowerLayerBytes);
 
-			writer.Write((ushort)(offsetToNextLevel - topLength));
+			writer.Write((ushort)(levelSizeInBytes - topLength));
 
 			if (titleBytes.Length > 1)
 			{
@@ -445,20 +397,40 @@ namespace CCTools
 				writer.Write(FIELD_PASSWORD);
 				writer.Write(passwordBytes);
 			}
-			if (trapConnectionsBytes.Length > 1)
+			if (trapConnections.Count > 0)
 			{
 				writer.Write(FIELD_TRAPCONNECTIONS);
-				writer.Write(trapConnectionsBytes);
+				writer.Write((byte)trapConnectionsBytes);
+				foreach (var t in trapConnections)
+				{
+					writer.Write((short)t.Source.X);
+					writer.Write((short)t.Source.Y);
+					writer.Write((short)t.Destination.X);
+					writer.Write((short)t.Destination.Y);
+					writer.Write((short)0);
+				}
 			}
-			if (cloneConnectionsBytes.Length > 1)
+			if (cloneConnections.Count > 0)
 			{
 				writer.Write(FIELD_CLONECONNECTIONS);
-				writer.Write(cloneConnectionsBytes);
+				writer.Write((byte)cloneConnectionsBytes);
+				foreach (var c in cloneConnections)
+				{
+					writer.Write((short)c.Source.X);
+					writer.Write((short)c.Source.Y);
+					writer.Write((short)c.Destination.X);
+					writer.Write((short)c.Destination.Y);
+				}
 			}
-			if (monsterLocationsBytes.Length > 1)
+			if (monsterLocations.Count > 0)
 			{
 				writer.Write(FIELD_MONSTERLOCATIONS);
-				writer.Write(monsterLocationsBytes);
+				writer.Write((byte)monsterLocationsBytes);
+				foreach (var m in monsterLocations)
+				{
+					writer.Write((byte)m.X);
+					writer.Write((byte)m.Y);
+				}
 			}
 		}
 

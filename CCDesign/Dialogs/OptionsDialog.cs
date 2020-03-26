@@ -26,9 +26,5 @@ namespace CCTools.CCDesign
 				Properties.Settings.Default.Reload();
 		}
 
-		private void associateCheckBox_CheckedChanged(object sender, EventArgs e)
-		{
-
-		}
 	}
 }
