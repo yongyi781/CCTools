@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using CCTools;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 namespace CCMemory
@@ -7,9 +8,9 @@ namespace CCMemory
     public class ChipsState
     {
         [field: MarshalAs(UnmanagedType.ByValArray, SizeConst = 1024)]
-        public byte[] Upper { get; set; }           // (0,0)
+        public Tile[] Upper { get; set; }           // (0,0)
         [field: MarshalAs(UnmanagedType.ByValArray, SizeConst = 1024)]
-        public byte[] Lower { get; set; }           // (0,32)
+        public Tile[] Lower { get; set; }           // (0,32)
         public short LevelNumber { get; set; }      // (0,64)
         public short TotalLevelCount { get; set; }  // (2,64)
         public short InitialTimeLimit { get; set; } // (4,64)
@@ -101,13 +102,17 @@ namespace CCMemory
         }
     }
 
+    [StructLayout(LayoutKind.Sequential, Pack = 1), TypeConverter(typeof(MonsterConverter))]
     public struct Monster
     {
-        public byte Tile;
-        public short X;
-        public short Y;
-        public short XDir;
-        public short YDir;
-        public short IsSlipping;
+        public Tile Tile { get; set; }
+        public Point Location { get; set; }
+        public Point Direction { get; set; }
+        public short IsSlipping { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Tile}, ({Location}), ({Direction}), {IsSlipping}";
+        }
     }
 }

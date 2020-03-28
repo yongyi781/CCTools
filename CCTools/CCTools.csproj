@@ -64,6 +64,7 @@
     <Compile Include="Tile.cs" />
     <Compile Include="TileConnection.cs" />
     <Compile Include="TileConnectionCollection.cs" />
+    <Compile Include="TileConverter.cs" />
     <Compile Include="TileLocation.cs" />
     <Compile Include="TileLocationCollection.cs" />
     <Compile Include="TileMap.cs" />

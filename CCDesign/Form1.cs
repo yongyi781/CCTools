@@ -357,6 +357,7 @@ namespace CCTools.CCDesign
             timeLimitUpDown.DataBindings.Add("Value", _levelSet, "TimeLimit", true, DataSourceUpdateMode.OnPropertyChanged);
             hintTextBox.DataBindings.Add("Text", _levelSet, "Hint", true, DataSourceUpdateMode.OnPropertyChanged);
             layerToolStripComboBox.SelectedIndex = 2;
+            splitContainer.SplitterDistance = ClientSize.Width / 6;
 
             UpdateTitle();
         }

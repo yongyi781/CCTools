@@ -1,9 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace CCTools
 {
-	[Serializable]
-	public enum Tile
+	[Serializable, TypeConverter(typeof(TileConverter))]
+	public enum Tile : byte
 	{
 		Floor, Wall, Chip, Water, Fire, InvisibleWall, PanelN, PanelW, PanelS, PanelE, Block, Dirt, Ice, ForceFloorS, BlockN, BlockW,
 		BlockS, BlockE, ForceFloorN, ForceFloorE, ForceFloorW, Exit, BlueLock, RedLock, GreenLock, YellowLock, IceNW, IceNE, IceSE, IceSW, BlueWallFake, BlueWallReal,

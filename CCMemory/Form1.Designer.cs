@@ -37,20 +37,23 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.autoRefreshCheckBox = new System.Windows.Forms.CheckBox();
             this.processNameLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.monstersPropertyGrid = new System.Windows.Forms.PropertyGrid();
             this.SuspendLayout();
             // 
             // processTextBox
             // 
-            this.processTextBox.Location = new System.Drawing.Point(114, 12);
+            this.processTextBox.Location = new System.Drawing.Point(101, 12);
             this.processTextBox.Name = "processTextBox";
-            this.processTextBox.Size = new System.Drawing.Size(116, 23);
+            this.processTextBox.Size = new System.Drawing.Size(66, 23);
             this.processTextBox.TabIndex = 0;
             this.processTextBox.Text = "otvdmw";
             // 
             // refreshButton
             // 
             this.refreshButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.refreshButton.Location = new System.Drawing.Point(236, 11);
+            this.refreshButton.Location = new System.Drawing.Point(173, 11);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 23);
             this.refreshButton.TabIndex = 2;
@@ -60,14 +63,14 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.propertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.propertyGrid.Enabled = false;
+            this.propertyGrid.HelpVisible = false;
             this.propertyGrid.Location = new System.Drawing.Point(12, 43);
             this.propertyGrid.Name = "propertyGrid";
             this.propertyGrid.PropertySort = System.Windows.Forms.PropertySort.NoSort;
-            this.propertyGrid.Size = new System.Drawing.Size(387, 260);
+            this.propertyGrid.Size = new System.Drawing.Size(316, 260);
             this.propertyGrid.TabIndex = 3;
             this.propertyGrid.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.PropertyGrid_PropertyValueChanged);
             // 
@@ -81,7 +84,7 @@
             this.logTextBox.Name = "logTextBox";
             this.logTextBox.ReadOnly = true;
             this.logTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.logTextBox.Size = new System.Drawing.Size(387, 140);
+            this.logTextBox.Size = new System.Drawing.Size(631, 140);
             this.logTextBox.TabIndex = 4;
             // 
             // timer
@@ -96,7 +99,7 @@
             this.autoRefreshCheckBox.Checked = true;
             this.autoRefreshCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.autoRefreshCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.autoRefreshCheckBox.Location = new System.Drawing.Point(317, 13);
+            this.autoRefreshCheckBox.Location = new System.Drawing.Point(254, 13);
             this.autoRefreshCheckBox.Name = "autoRefreshCheckBox";
             this.autoRefreshCheckBox.Size = new System.Drawing.Size(99, 20);
             this.autoRefreshCheckBox.TabIndex = 5;
@@ -112,11 +115,44 @@
             this.processNameLabel.TabIndex = 6;
             this.processNameLabel.Text = "Process name:";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(470, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 7;
+            this.textBox1.Leave += new System.EventHandler(this.TextBox1_Leave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(349, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Monster list address:";
+            // 
+            // monstersPropertyGrid
+            // 
+            this.monstersPropertyGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.monstersPropertyGrid.HelpVisible = false;
+            this.monstersPropertyGrid.Location = new System.Drawing.Point(334, 43);
+            this.monstersPropertyGrid.Name = "monstersPropertyGrid";
+            this.monstersPropertyGrid.PropertySort = System.Windows.Forms.PropertySort.NoSort;
+            this.monstersPropertyGrid.Size = new System.Drawing.Size(309, 260);
+            this.monstersPropertyGrid.TabIndex = 9;
+            this.monstersPropertyGrid.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.MonstersPropertyGrid_PropertyValueChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(411, 461);
+            this.ClientSize = new System.Drawing.Size(655, 461);
+            this.Controls.Add(this.monstersPropertyGrid);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.processNameLabel);
             this.Controls.Add(this.autoRefreshCheckBox);
             this.Controls.Add(this.logTextBox);
@@ -142,6 +178,9 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.CheckBox autoRefreshCheckBox;
         private System.Windows.Forms.Label processNameLabel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PropertyGrid monstersPropertyGrid;
     }
 }
 

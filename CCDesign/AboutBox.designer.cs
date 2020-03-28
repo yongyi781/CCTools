@@ -30,7 +30,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox));
             this.label1 = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -45,20 +45,18 @@
             this.closeButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.closeButton.Name = "closeButton";
             // 
-            // label11
+            // label2
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // AboutBox
             // 
             this.AcceptButton = this.closeButton;
-            this.CancelButton = this.closeButton;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.label11);
+            this.CancelButton = this.closeButton;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.closeButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -76,6 +74,6 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button closeButton;
-		private System.Windows.Forms.Label label11;
-	}
+        private System.Windows.Forms.Label label2;
+    }
 }

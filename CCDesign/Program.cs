@@ -11,9 +11,7 @@ namespace CCTools.CCDesign
 		[STAThread]
 		static void Main(string[] args)
 		{
-#if DEBUG
 			Application.EnableVisualStyles();
-#endif
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(args.Length > 0 ? new Form1(args[0]) : new Form1());
 		}
