@@ -148,6 +148,7 @@
             this.browseButton.Size = new System.Drawing.Size(75, 23);
             this.browseButton.TabIndex = 2;
             this.browseButton.Text = "&Browse...";
+            this.browseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
             // automaticallyOpenNewLevelsCheckBox
             // 

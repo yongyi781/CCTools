@@ -12,7 +12,7 @@ namespace CCTools.CCDesign
 			Font = SystemFonts.MessageBoxFont;
 		}
 
-		private void browseButton_Click(object sender, EventArgs e)
+		private void BrowseButton_Click(object sender, EventArgs e)
 		{
 			if (openFileDialog.ShowDialog() == DialogResult.OK)
 				fileLocationTextBox.Text = openFileDialog.FileName;
@@ -25,6 +25,5 @@ namespace CCTools.CCDesign
 			else
 				Properties.Settings.Default.Reload();
 		}
-
 	}
 }

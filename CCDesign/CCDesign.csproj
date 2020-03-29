@@ -223,6 +223,7 @@
   <ItemGroup>
     <Content Include="Application.ico" />
     <Content Include="Form1.ico" />
+    <None Include="Resources\Palette.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCTools\CCTools.csproj">

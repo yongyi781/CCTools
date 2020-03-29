@@ -169,7 +169,6 @@ namespace CCTools.CCDesign
             base.OnHandleCreated(e);
             if (rightTabControl.Created)
                 UpdatePasteEnabled(rightTabControl.SelectedTab as LevelEditorTabPage);
-            NativeMethods.SetWindowTheme(new HandleRef(toolboxTabControl, toolboxTabControl.Handle), string.Empty, string.Empty);
             NativeMethods.SetTimer(Handle, IntPtr.Zero, 200, _timerProc);
         }
 
@@ -357,291 +356,12 @@ namespace CCTools.CCDesign
             timeLimitUpDown.DataBindings.Add("Value", _levelSet, "TimeLimit", true, DataSourceUpdateMode.OnPropertyChanged);
             hintTextBox.DataBindings.Add("Text", _levelSet, "Hint", true, DataSourceUpdateMode.OnPropertyChanged);
             layerToolStripComboBox.SelectedIndex = 2;
-            splitContainer.SplitterDistance = ClientSize.Width / 6;
 
             UpdateTitle();
         }
 
         private void InitializeToolboxItems()
         {
-            #region Basic
-
-            floorPictureBox.Image = tileset.GetBitmap(Tile.Floor);
-            floorPictureBox.Tag = Tile.Floor;
-            wallPictureBox.Image = tileset.GetBitmap(Tile.Wall);
-            wallPictureBox.Tag = Tile.Wall;
-
-            panelNPictureBox.Image = tileset.GetBitmap(Tile.PanelN);
-            panelNPictureBox.Tag = Tile.PanelN;
-            panelWPictureBox.Image = tileset.GetBitmap(Tile.PanelW);
-            panelWPictureBox.Tag = Tile.PanelW;
-            panelSPictureBox.Image = tileset.GetBitmap(Tile.PanelS);
-            panelSPictureBox.Tag = Tile.PanelS;
-            panelEPictureBox.Image = tileset.GetBitmap(Tile.PanelE);
-            panelEPictureBox.Tag = Tile.PanelE;
-            panelSEPictureBox.Image = tileset.GetBitmap(Tile.PanelSE);
-            panelSEPictureBox.Tag = Tile.PanelSE;
-
-            chipPictureBox.Image = tileset.GetBitmap(Tile.Chip);
-            chipPictureBox.Tag = Tile.Chip;
-            socketPictureBox.Image = tileset.GetBitmap(Tile.Socket);
-            socketPictureBox.Tag = Tile.Socket;
-            exitPictureBox.Image = tileset.GetBitmap(Tile.Exit);
-            exitPictureBox.Tag = Tile.Exit;
-            hintPictureBox.Image = tileset.GetBitmap(Tile.Hint);
-            hintPictureBox.Tag = Tile.Hint;
-
-            blueLockPictureBox.Image = tileset.GetBitmap(Tile.BlueLock);
-            blueLockPictureBox.Tag = Tile.BlueLock;
-            redLockPictureBox.Image = tileset.GetBitmap(Tile.RedLock);
-            redLockPictureBox.Tag = Tile.RedLock;
-            greenLockPictureBox.Image = tileset.GetBitmap(Tile.GreenLock);
-            greenLockPictureBox.Tag = Tile.GreenLock;
-            yellowLockPictureBox.Image = tileset.GetBitmap(Tile.YellowLock);
-            yellowLockPictureBox.Tag = Tile.YellowLock;
-
-            chipNPictureBox.Image = tileset.GetBitmap(Tile.ChipN);
-            chipNPictureBox.Tag = Tile.ChipN;
-            chipWPictureBox.Image = tileset.GetBitmap(Tile.ChipW);
-            chipWPictureBox.Tag = Tile.ChipW;
-            chipSPictureBox.Image = tileset.GetBitmap(Tile.ChipS);
-            chipSPictureBox.Tag = Tile.ChipS;
-            chipEPictureBox.Image = tileset.GetBitmap(Tile.ChipE);
-            chipEPictureBox.Tag = Tile.ChipE;
-
-            #endregion
-
-            #region Obstacles
-
-            waterPictureBox.Image = Tileset.GetBitmap(Tile.Water);
-            waterPictureBox.Tag = Tile.Water;
-            firePictureBox.Image = Tileset.GetBitmap(Tile.Fire);
-            firePictureBox.Tag = Tile.Fire;
-            bombPictureBox.Image = Tileset.GetBitmap(Tile.Bomb);
-            bombPictureBox.Tag = Tile.Bomb;
-
-            forceFloorSPictureBox.Image = Tileset.GetBitmap(Tile.ForceFloorS);
-            forceFloorSPictureBox.Tag = Tile.ForceFloorS;
-            forceFloorNPictureBox.Image = Tileset.GetBitmap(Tile.ForceFloorN);
-            forceFloorNPictureBox.Tag = Tile.ForceFloorN;
-            forceFloorEPictureBox.Image = Tileset.GetBitmap(Tile.ForceFloorE);
-            forceFloorEPictureBox.Tag = Tile.ForceFloorE;
-            forceFloorWPictureBox.Image = Tileset.GetBitmap(Tile.ForceFloorW);
-            forceFloorWPictureBox.Tag = Tile.ForceFloorW;
-            forceFloorRandomPictureBox.Image = Tileset.GetBitmap(Tile.ForceFloorRandom);
-            forceFloorRandomPictureBox.Tag = Tile.ForceFloorRandom;
-
-            icePictureBox.Image = Tileset.GetBitmap(Tile.Ice);
-            icePictureBox.Tag = Tile.Ice;
-            iceNWPictureBox.Image = Tileset.GetBitmap(Tile.IceNW);
-            iceNWPictureBox.Tag = Tile.IceNW;
-            iceNEPictureBox.Image = Tileset.GetBitmap(Tile.IceNE);
-            iceNEPictureBox.Tag = Tile.IceNE;
-            iceSEPictureBox.Image = Tileset.GetBitmap(Tile.IceSE);
-            iceSEPictureBox.Tag = Tile.IceSE;
-            iceSWPictureBox.Image = Tileset.GetBitmap(Tile.IceSW);
-            iceSWPictureBox.Tag = Tile.IceSW;
-
-            greenButtonPictureBox.Image = Tileset.GetBitmap(Tile.GreenButton);
-            greenButtonPictureBox.Tag = Tile.GreenButton;
-            toggleDoorClosedPictureBox.Image = Tileset.GetBitmap(Tile.ToggleDoorClosed);
-            toggleDoorClosedPictureBox.Tag = Tile.ToggleDoorClosed;
-            toggleDoorOpenPictureBox.Image = Tileset.GetBitmap(Tile.ToggleDoorOpen);
-            toggleDoorOpenPictureBox.Tag = Tile.ToggleDoorOpen;
-
-            brownButtonPictureBox.Image = Tileset.GetBitmap(Tile.BrownButton);
-            brownButtonPictureBox.Tag = Tile.BrownButton;
-            trapPictureBox.Image = Tileset.GetBitmap(Tile.Trap);
-            trapPictureBox.Tag = Tile.Trap;
-            recessedWallPictureBox.Image = Tileset.GetBitmap(Tile.RecessedWall);
-            recessedWallPictureBox.Tag = Tile.RecessedWall;
-
-            #endregion
-
-            #region Items
-
-            blueKeyPictureBox.Image = Tileset.GetBitmap(Tile.BlueKey);
-            blueKeyPictureBox.Tag = Tile.BlueKey;
-            redKeyPictureBox.Image = Tileset.GetBitmap(Tile.RedKey);
-            redKeyPictureBox.Tag = Tile.RedKey;
-            greenKeyPictureBox.Image = Tileset.GetBitmap(Tile.GreenKey);
-            greenKeyPictureBox.Tag = Tile.GreenKey;
-            yellowKeyPictureBox.Image = Tileset.GetBitmap(Tile.YellowKey);
-            yellowKeyPictureBox.Tag = Tile.YellowKey;
-
-            flippersPictureBox.Image = Tileset.GetBitmap(Tile.Flippers);
-            flippersPictureBox.Tag = Tile.Flippers;
-            fireBootsPictureBox.Image = Tileset.GetBitmap(Tile.FireBoots);
-            fireBootsPictureBox.Tag = Tile.FireBoots;
-            iceSkatesPictureBox.Image = Tileset.GetBitmap(Tile.IceSkates);
-            iceSkatesPictureBox.Tag = Tile.IceSkates;
-            suctionShoesPictureBox.Image = Tileset.GetBitmap(Tile.SuctionBoots);
-            suctionShoesPictureBox.Tag = Tile.SuctionBoots;
-
-            #endregion
-
-            #region Monsters
-
-            bugNPictureBox.Image = Tileset.GetBitmap(Tile.BugN);
-            bugNPictureBox.Tag = Tile.BugN;
-            bugWPictureBox.Image = Tileset.GetBitmap(Tile.BugW);
-            bugWPictureBox.Tag = Tile.BugW;
-            bugSPictureBox.Image = Tileset.GetBitmap(Tile.BugS);
-            bugSPictureBox.Tag = Tile.BugS;
-            bugEPictureBox.Image = Tileset.GetBitmap(Tile.BugE);
-            bugEPictureBox.Tag = Tile.BugE;
-
-            fireballNPictureBox.Image = Tileset.GetBitmap(Tile.FireballN);
-            fireballNPictureBox.Tag = Tile.FireballN;
-            fireballWPictureBox.Image = Tileset.GetBitmap(Tile.FireballW);
-            fireballWPictureBox.Tag = Tile.FireballW;
-            fireballSPictureBox.Image = Tileset.GetBitmap(Tile.FireballS);
-            fireballSPictureBox.Tag = Tile.FireballS;
-            fireballEPictureBox.Image = Tileset.GetBitmap(Tile.FireballE);
-            fireballEPictureBox.Tag = Tile.FireballE;
-
-            pinkBallNPictureBox.Image = Tileset.GetBitmap(Tile.PinkBallN);
-            pinkBallNPictureBox.Tag = Tile.PinkBallN;
-            pinkBallWPictureBox.Image = Tileset.GetBitmap(Tile.PinkBallW);
-            pinkBallWPictureBox.Tag = Tile.PinkBallW;
-            pinkBallSPictureBox.Image = Tileset.GetBitmap(Tile.PinkBallS);
-            pinkBallSPictureBox.Tag = Tile.PinkBallS;
-            pinkBallEPictureBox.Image = Tileset.GetBitmap(Tile.PinkBallE);
-            pinkBallEPictureBox.Tag = Tile.PinkBallE;
-
-            tankNPictureBox.Image = Tileset.GetBitmap(Tile.TankN);
-            tankNPictureBox.Tag = Tile.TankN;
-            tankWPictureBox.Image = Tileset.GetBitmap(Tile.TankW);
-            tankWPictureBox.Tag = Tile.TankW;
-            tankSPictureBox.Image = Tileset.GetBitmap(Tile.TankS);
-            tankSPictureBox.Tag = Tile.TankS;
-            tankEPictureBox.Image = Tileset.GetBitmap(Tile.TankE);
-            tankEPictureBox.Tag = Tile.TankE;
-
-            gliderNPictureBox.Image = Tileset.GetBitmap(Tile.GliderN);
-            gliderNPictureBox.Tag = Tile.GliderN;
-            gliderWPictureBox.Image = Tileset.GetBitmap(Tile.GliderW);
-            gliderWPictureBox.Tag = Tile.GliderW;
-            gliderSPictureBox.Image = Tileset.GetBitmap(Tile.GliderS);
-            gliderSPictureBox.Tag = Tile.GliderS;
-            gliderEPictureBox.Image = Tileset.GetBitmap(Tile.GliderE);
-            gliderEPictureBox.Tag = Tile.GliderE;
-
-            teethNPictureBox.Image = Tileset.GetBitmap(Tile.TeethN);
-            teethNPictureBox.Tag = Tile.TeethN;
-            teethWPictureBox.Image = Tileset.GetBitmap(Tile.TeethW);
-            teethWPictureBox.Tag = Tile.TeethW;
-            teethSPictureBox.Image = Tileset.GetBitmap(Tile.TeethS);
-            teethSPictureBox.Tag = Tile.TeethS;
-            teethEPictureBox.Image = Tileset.GetBitmap(Tile.TeethE);
-            teethEPictureBox.Tag = Tile.TeethE;
-
-            walkerNPictureBox.Image = Tileset.GetBitmap(Tile.WalkerN);
-            walkerNPictureBox.Tag = Tile.WalkerN;
-            walkerWPictureBox.Image = Tileset.GetBitmap(Tile.WalkerW);
-            walkerWPictureBox.Tag = Tile.WalkerW;
-            walkerSPictureBox.Image = Tileset.GetBitmap(Tile.WalkerS);
-            walkerSPictureBox.Tag = Tile.WalkerS;
-            walkerEPictureBox.Image = Tileset.GetBitmap(Tile.WalkerE);
-            walkerEPictureBox.Tag = Tile.WalkerE;
-
-            blobNPictureBox.Image = Tileset.GetBitmap(Tile.BlobN);
-            blobNPictureBox.Tag = Tile.BlobN;
-            blobWPictureBox.Image = Tileset.GetBitmap(Tile.BlobW);
-            blobWPictureBox.Tag = Tile.BlobW;
-            blobSPictureBox.Image = Tileset.GetBitmap(Tile.BlobS);
-            blobSPictureBox.Tag = Tile.BlobS;
-            blobEPictureBox.Image = Tileset.GetBitmap(Tile.BlobE);
-            blobEPictureBox.Tag = Tile.BlobE;
-
-            parameciumNPictureBox.Image = Tileset.GetBitmap(Tile.ParameciumN);
-            parameciumNPictureBox.Tag = Tile.ParameciumN;
-            parameciumWPictureBox.Image = Tileset.GetBitmap(Tile.ParameciumW);
-            parameciumWPictureBox.Tag = Tile.ParameciumW;
-            parameciumSPictureBox.Image = Tileset.GetBitmap(Tile.ParameciumS);
-            parameciumSPictureBox.Tag = Tile.ParameciumS;
-            parameciumEPictureBox.Image = Tileset.GetBitmap(Tile.ParameciumE);
-            parameciumEPictureBox.Tag = Tile.ParameciumE;
-
-            #endregion
-
-            #region Misc
-
-            invisibleWallPictureBox.Image = Tileset.GetBitmap(Tile.InvisibleWall);
-            invisibleWallPictureBox.Tag = Tile.InvisibleWall;
-            hiddenWallPictureBox.Image = Tileset.GetBitmap(Tile.HiddenWall);
-            hiddenWallPictureBox.Tag = Tile.HiddenWall;
-            spyPictureBox.Image = Tileset.GetBitmap(Tile.Thief);
-            spyPictureBox.Tag = Tile.Thief;
-
-            blueWallRealPictureBox.Image = Tileset.GetBitmap(Tile.BlueWallReal);
-            blueWallRealPictureBox.Tag = Tile.BlueWallReal;
-            blueWallFakePictureBox.Image = Tileset.GetBitmap(Tile.BlueWallFake);
-            blueWallFakePictureBox.Tag = Tile.BlueWallFake;
-            teleportPictureBox.Image = Tileset.GetBitmap(Tile.Teleport);
-            teleportPictureBox.Tag = Tile.Teleport;
-
-            blockPictureBox.Image = Tileset.GetBitmap(Tile.Block);
-            blockPictureBox.Tag = Tile.Block;
-            dirtPictureBox.Image = Tileset.GetBitmap(Tile.Dirt);
-            dirtPictureBox.Tag = Tile.Dirt;
-            gravelPictureBox.Image = Tileset.GetBitmap(Tile.Gravel);
-            gravelPictureBox.Tag = Tile.Gravel;
-
-            redButtonPictureBox.Image = Tileset.GetBitmap(Tile.RedButton);
-            redButtonPictureBox.Tag = Tile.RedButton;
-            cloningMachinePictureBox.Image = Tileset.GetBitmap(Tile.CloningMachine);
-            cloningMachinePictureBox.Tag = Tile.CloningMachine;
-            blueButtonPictureBox.Image = Tileset.GetBitmap(Tile.BlueButton);
-            blueButtonPictureBox.Tag = Tile.BlueButton;
-
-            blockNPictureBox.Image = Tileset.GetBitmap(Tile.BlockN);
-            blockNPictureBox.Tag = Tile.BlockN;
-            blockWPictureBox.Image = Tileset.GetBitmap(Tile.BlockW);
-            blockWPictureBox.Tag = Tile.BlockW;
-            blockSPictureBox.Image = Tileset.GetBitmap(Tile.BlockS);
-            blockSPictureBox.Tag = Tile.BlockS;
-            blockEPictureBox.Image = Tileset.GetBitmap(Tile.BlockE);
-            blockEPictureBox.Tag = Tile.BlockE;
-
-            #endregion
-
-            #region Unused
-
-            splashPictureBox.Image = Tileset.GetBitmap(Tile.Splash);
-            splashPictureBox.Tag = Tile.Splash;
-            burningChipPictureBox.Image = Tileset.GetBitmap(Tile.BurningChip);
-            burningChipPictureBox.Tag = Tile.BurningChip;
-            burntChipPictureBox.Image = Tileset.GetBitmap(Tile.BurntChip);
-            burntChipPictureBox.Tag = Tile.BurntChip;
-
-            chipInExitPictureBox.Image = Tileset.GetBitmap(Tile.ChipInExit);
-            chipInExitPictureBox.Tag = Tile.ChipInExit;
-            fakeExit1PictureBox.Image = Tileset.GetBitmap(Tile.FakeExit1);
-            fakeExit1PictureBox.Tag = Tile.FakeExit1;
-            fakeExit2PictureBox.Image = Tileset.GetBitmap(Tile.FakeExit2);
-            fakeExit2PictureBox.Tag = Tile.FakeExit2;
-
-            chipSwimNPictureBox.Image = Tileset.GetBitmap(Tile.ChipSwimN);
-            chipSwimNPictureBox.Tag = Tile.ChipSwimN;
-            chipSwimWPictureBox.Image = Tileset.GetBitmap(Tile.ChipSwimW);
-            chipSwimWPictureBox.Tag = Tile.ChipSwimW;
-            chipSwimSPictureBox.Image = Tileset.GetBitmap(Tile.ChipSwimS);
-            chipSwimSPictureBox.Tag = Tile.ChipSwimS;
-            chipSwimEPictureBox.Image = Tileset.GetBitmap(Tile.ChipSwimE);
-            chipSwimEPictureBox.Tag = Tile.ChipSwimE;
-
-            unused20PictureBox.Image = Tileset.GetBitmap(Tile.Unused20);
-            unused20PictureBox.Tag = Tile.Unused20;
-            unused36PictureBox.Image = Tileset.GetBitmap(Tile.Unused36);
-            unused36PictureBox.Tag = Tile.Unused36;
-            unused37PictureBox.Image = Tileset.GetBitmap(Tile.Unused37);
-            unused37PictureBox.Tag = Tile.Unused37;
-            unused38PictureBox.Image = Tileset.GetBitmap(Tile.Unused38);
-            unused38PictureBox.Tag = Tile.Unused38;
-
-            #endregion
-
             leftPictureBox.Image = tileset.GetBitmap(leftTile);
             rightPictureBox.Image = tileset.GetBitmap(rightTile);
         }
@@ -1458,16 +1178,6 @@ namespace CCTools.CCDesign
             catch (ApplicationException ex) { ReportError(ex.Message); }
         }
 
-        private void toolboxItem_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (!(sender is PictureBox control) || control.Tag == null)
-                return;
-            if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
-                LeftTile = (Tile)control.Tag;
-            if ((e.Button & MouseButtons.Right) == MouseButtons.Right)
-                RightTile = (Tile)control.Tag;
-        }
-
         private void toolboxItem_MouseEnter(object sender, EventArgs e)
         {
             if (sender is Control control && control.Tag != null)
@@ -1491,5 +1201,16 @@ namespace CCTools.CCDesign
         }
 
         #endregion
+
+        private void PalettePictureBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            var x = e.X * 7 / palettePictureBox.Width;
+            var y = e.Y * 16 / palettePictureBox.Height;
+            var tile = (Tile)(16 * x + y);
+            if ((e.Button & MouseButtons.Left) == MouseButtons.Left)
+                LeftTile = tile;
+            if ((e.Button & MouseButtons.Right) == MouseButtons.Right)
+                RightTile = tile;
+        }
     }
 }
