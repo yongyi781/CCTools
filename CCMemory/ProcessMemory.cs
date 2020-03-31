@@ -40,7 +40,6 @@ namespace CCMemory
 
                 if (mbi.Protect == PageProtect.PAGE_EXECUTE_READWRITE)
                 {
-                    Console.WriteLine($"{mbi.BaseAddress.ToInt64():X}, {mbi.RegionSize.ToUInt64():X}, {mbi.Protect}, {mbi.AllocationProtect}");
                     var span = new Span<byte>(new byte[regionSize]);
                     ReadProcessMemory(process.Handle, mbi.BaseAddress, out span[0], span.Length, out _);
                     var index = span.IndexOf(sequence);

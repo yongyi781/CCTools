@@ -37,9 +37,9 @@ namespace CCMemory
             if (address != NotFound)
             {
                 chipsStateAddress = address + BlipWavToStateOffset;
-                Log($"Success! Start address = {chipsStateAddress.ToInt32():X}\r\n" +
-                    $"data offset = {(chipsStateAddress + DataOffset).ToInt32():X}\r\n" +
-                    $"-0xF160 = {(chipsStateAddress + MonsterListOffset).ToInt32():X}");
+                Log($"Success! Game state address = {chipsStateAddress.ToInt32():X}\r\n" +
+                    $"Data address = {(chipsStateAddress + DataOffset).ToInt32():X}\r\n" +
+                    $"Game state - 0xF160 = {(chipsStateAddress + MonsterListOffset).ToInt32():X}");
                 return;
             }
             else
