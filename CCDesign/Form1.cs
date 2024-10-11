@@ -419,6 +419,9 @@ namespace CCTools.CCDesign
                 rightTabControl.SelectTab(tabPageName);
             else
             {
+                if (!IsChanged && rightTabControl.TabCount > 0)
+                    rightTabControl.TabPages.Remove(rightTabControl.SelectedTab);
+
                 var tabPage = new LevelEditorTabPage(this, currentLevel);
                 var indexes = new int[rightTabControl.TabPages.Count];
                 for (int i = 0; i < rightTabControl.TabPages.Count; i++)
@@ -567,7 +570,8 @@ namespace CCTools.CCDesign
 
         private void TimerProc(IntPtr hwnd, int uMsg, IntPtr idEvent, int dwTime)
         {
-            UpdatePasteEnabled(rightTabControl.SelectedTab as LevelEditorTabPage);
+            if (rightTabControl.TabCount > 0)
+                UpdatePasteEnabled(rightTabControl.SelectedTab as LevelEditorTabPage);
         }
 
         private void UpdateLevelMenuItemsEnabled()

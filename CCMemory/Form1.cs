@@ -40,7 +40,6 @@ namespace CCMemory
                 Log($"Success! Game state address = {chipsStateAddress.ToInt32():X}\r\n" +
                     $"Data address = {(chipsStateAddress + DataOffset).ToInt32():X}\r\n" +
                     $"Game state - 0xF160 = {(chipsStateAddress + MonsterListOffset).ToInt32():X}");
-                return;
             }
             else
             {
@@ -159,7 +158,7 @@ namespace CCMemory
             var success = ProcessMemory.WriteMonsterList(process, monsterListAddress, monsterList, chipsState.MonsterList.Length);
             if (!success)
             {
-                Log($"Error encountered when writing");
+                Log("Error encountered when writing");
             }
         }
     }
