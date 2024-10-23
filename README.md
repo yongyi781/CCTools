@@ -8,7 +8,7 @@ This repository contains two programs: CCDesign, the level designer for [Chip's 
 * .NET Framework
 * For Chip's Challenge to work on 64-bit Windows you will need [otvdm](https://github.com/otya128/winevdm).
 
-## Screenshot
+## Screenshots
 
 ### Chip's Challenge Level Designer
 
